@@ -1,0 +1,52 @@
+{
+    "name": "mvd_310",
+    "description": "MVD 310-1997 transliteration schema",
+    "url": "https://dangry.ru/iuliia/mvd-310/",
+    "mapping": {
+        "а": "a",
+        "б": "b",
+        "в": "v",
+        "г": "g",
+        "д": "d",
+        "е": "e",
+        "ё": "e",
+        "ж": "zh",
+        "з": "z",
+        "и": "i",
+        "й": "y",
+        "к": "k",
+        "л": "l",
+        "м": "m",
+        "н": "n",
+        "о": "o",
+        "п": "p",
+        "р": "r",
+        "с": "s",
+        "т": "t",
+        "у": "u",
+        "ф": "f",
+        "х": "kh",
+        "ц": "ts",
+        "ч": "ch",
+        "ш": "sh",
+        "щ": "shch",
+        "ъ": "\"",
+        "ы": "y",
+        "ь": "'",
+        "э": "e",
+        "ю": "yu",
+        "я": "ya"
+    },
+    "prev_mapping": { "ье": "ye", "ъе": "ye" },
+    "next_mapping": { "ье": "", "ъе": "" },
+    "ending_mapping": null,
+    "samples": [
+        [
+            "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю",
+            "Yuliya, syesh' eshche etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu"
+        ],
+        ["Юлия Щеглова", "Yuliya Shcheglova"],
+        ["Гайа Васильева", "Gaya Vasilyeva"],
+        ["Андрей Видный", "Andrey Vidnyy"]
+    ]
+}
