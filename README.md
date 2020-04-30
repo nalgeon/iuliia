@@ -14,6 +14,7 @@ Why use `Iuliia`:
 
 Supported languages:
 
+-   [Go](https://github.com/mehanizm/iuliia-go)
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
 -   [Python](https://github.com/nalgeon/iuliia-py)
 
