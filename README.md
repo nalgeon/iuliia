@@ -48,7 +48,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
 -   [Python](https://github.com/nalgeon/iuliia-py)
 
-This repo contains schema descriptions. It is not intended to be used directly. If you want to add another schema — send a PR! Use [wikipedia.json](wikipedia.json) as a reference.
+This repo contains schema descriptions. It is not intended to be used directly. If you want to add another schema — send a PR! See [schema.json](schema.json) for JSON Schema definition and [wikipedia.json](wikipedia.json) as a reference.
 
 ## Issues and limitations
 

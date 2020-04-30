@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://github.com/nalgeon/iuliia/schema.json",
+    "title": "Transliteration Schema",
+    "type": "object",
+    "required": ["name", "description", "url", "mapping", "samples"],
+    "properties": {
+        "name": {
+            "description": "Schema name",
+            "type": "string"
+        },
+        "aliases": {
+            "description": "Schema name aliases",
+            "type": "array",
+            "items": {
+                "type": "string",
+                "uniqueItems": true
+            }
+        },
+        "description": {
+            "description": "Schema description",
+            "type": "string"
+        },
+        "url": {
+            "description": "Schema description url",
+            "type": "string"
+        },
+        "comments": {
+            "description": "Schema comments",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "mapping": {
+            "description": "Mapping for individual letters",
+            "type": "object"
+        },
+        "prev_mapping": {
+            "description": "Mapping for letters with respect to previous sibling",
+            "type": ["object", "null"]
+        },
+        "next_mapping": {
+            "description": "Mapping for letters with respect to next sibling",
+            "type": ["object", "null"]
+        },
+        "ending_mapping": {
+            "description": "Mapping for word endings",
+            "type": ["object", "null"]
+        },
+        "samples": {
+            "description": "Transliteraton samples",
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
