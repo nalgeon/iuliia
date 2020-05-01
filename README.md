@@ -47,6 +47,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 -   [Go](https://github.com/mehanizm/iuliia-go)
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
 -   [Python](https://github.com/nalgeon/iuliia-py)
+-   [Ruby](https://github.com/adnikiforov/iuliia-rb)
 
 This repo contains schema descriptions. It is not intended to be used directly. If you want to add another schema — send a PR! See [schema.jsd](schema.jsd) for JSON Schema definition and [wikipedia.json](wikipedia.json) as a reference.
 
@@ -55,7 +56,7 @@ This repo contains schema descriptions. It is not intended to be used directly. 
 In general:
 
 -   Only Russian subset of Cyrillic is supported.
--   Does not support composite Unicode characters (e.g., `Ё`, but not `Ё`).
+-   Does not support composite Unicode characters (e.g., `Ё`, but not `Ё`).
 
 Schema-specific:
 
