@@ -47,6 +47,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 -   [C#](https://github.com/belianin/iuliia-cs)
 -   [Go](https://github.com/mehanizm/iuliia-go)
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
+-   [PHP](https://github.com/perevoshchikov/iuliia-php)
 -   [Python](https://github.com/nalgeon/iuliia-py)
 -   [Ruby](https://github.com/adnikiforov/iuliia-rb)
 
