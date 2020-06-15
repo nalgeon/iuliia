@@ -52,6 +52,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 -   [PHP](https://github.com/perevoshchikov/iuliia-php)
 -   **[Python](https://github.com/nalgeon/iuliia-py)**
 -   [Ruby](https://github.com/adnikiforov/iuliia-rb)
+-   [Rust](https://github.com/massita99/iuliia-rust)
 
 This repo contains schema descriptions. It is not intended to be used directly. If you want to add another schema — send a PR! See [schema.jsd](schema.jsd) for JSON Schema definition and [wikipedia.json](wikipedia.json) as a reference.
 
