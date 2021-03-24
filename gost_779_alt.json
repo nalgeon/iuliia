@@ -33,7 +33,7 @@
         "ъ": "``",
         "ы": "y`",
         "ь": "`",
-        "э": "е`",
+        "э": "e`",
         "ю": "yu",
         "я": "ya"
     },
@@ -48,7 +48,7 @@
     "samples": [
         [
             "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю",
-            "Yuliya, s``esh` eshhyo е`tix myagkix franczuzskix bulok iz Joshkar-Oly`, da vy`pej altajskogo chayu"
+            "Yuliya, s``esh` eshhyo e`tix myagkix franczuzskix bulok iz Joshkar-Oly`, da vy`pej altajskogo chayu"
         ]
     ]
 }
