@@ -50,6 +50,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 -   [Java](https://github.com/homyakin/iuliia-java) (Jackson)
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
 -   [PHP](https://github.com/perevoshchikov/iuliia-php)
+-   [PostgreSQL](https://github.com/rin-nas/postgresql-patterns-library/blob/master/functions/iuliia_translate.sql)
 -   **[Python](https://github.com/nalgeon/iuliia-py) ✨**
 -   [Ruby](https://github.com/adnikiforov/iuliia-rb)
 -   [Rust](https://github.com/massita99/iuliia-rust)
