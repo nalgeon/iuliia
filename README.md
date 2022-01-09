@@ -45,6 +45,7 @@ For schema details and other information, see <https://dangry.ru/iuliia> (in Rus
 ## Supported languages
 
 -   [C#](https://github.com/belianin/iuliia-cs)
+-   [Crystal](https://github.com/kandayo/iuliia-cr)
 -   [Go](https://github.com/mehanizm/iuliia-go)
 -   [Java](https://github.com/massita99/iuliia-java) (Gson)
 -   [Java](https://github.com/homyakin/iuliia-java) (Jackson)
