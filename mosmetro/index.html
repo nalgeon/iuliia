@@ -1,0 +1,166 @@
+<!doctype html><html lang=en>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Московское метро</title>
+<meta name=description content="Схема транслитерации Московского метрополитена">
+<meta name=robots content="index, follow">
+<link rel=stylesheet type=text/css href=/assets/css/style.899a77700a13bea9d72dc8abff528dd1d3c1c0b622fd342afe7df197f0dd3c5a.css>
+<link rel=icon href=/assets/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/assets/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=/assets/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=/assets/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#fff">
+<meta name=msapplication-TileColor content="#fff">
+<link rel=canonical href=https://iuliia.ru/mosmetro/>
+<meta name=author content="Антон Жиянов">
+<meta property="og:site_name" content="Юлия → Iuliia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Московское метро">
+<meta property="og:description" content="Схема транслитерации Московского метрополитена">
+<meta property="og:url" content="https://iuliia.ru/mosmetro/">
+<meta property="og:image" content="https://iuliia.ru/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Московское метро">
+<meta name=twitter:description content="Схема транслитерации Московского метрополитена">
+<meta name=twitter:url content="https://iuliia.ru/mosmetro/">
+<meta name=twitter:site content="@nalgeon">
+<meta name=twitter:image content="https://iuliia.ru/"></head>
+<body>
+<div class=header>
+<div class=container>
+<div class=row>
+<div class="col-xs-6 col-sm-3">
+<a href=/>
+<strong>Юлия → Iuliia</strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=storey>
+<div class=container>
+<article class=post>
+<div class=row>
+<div class="col-xs-12 col-sm-10 article">
+<header>
+<h1>Московское метро</h1>
+</header>
+<p>Схема транслитерации, которую использует Московский метрополитен. Визуально самая приятная из всех, хотя уступает Википедии по фонетической точности. Сочетает удачные решения <a href=/wikipedia>Википедии</a> и <a href=/yandex-maps>Яндекс.Карт</a>. Придумана в Студии Лебедева, официально нигде не описана.</p>
+<p>📅 2013 2.0 / 2019 4.0 • ✔️ действует • ⚪ без диакритики</p>
+<p>Особенности:</p>
+<ul>
+<li>Приятная <code>Щ</code> → <code>SCH</code></li>
+<li>Без апострофов для <code>Ъ</code> и <code>Ь</code></li>
+<li>Cхлопывает окончания на <code>-Й</code></li>
+</ul>
+<div class=tabs>
+<input name=tabs type=radio id=text checked class=input>
+<label for=text class=label><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref=source contenteditable=true class=editable><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref=target data-schema=mosmetro><code>Yuliya, syesh esche etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu</code></pre>
+</div>
+<input name=tabs type=radio id=js class=input>
+<label for=js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.MOSMETRO);</code></pre>
+<input name=tabs type=radio id=python class=input>
+<label for=python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.MOSMETRO)</code></pre>
+</div>
+<h2 id=правила>Правила</h2>
+<pre tabindex=0><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    e
+ё    e,yo
+ж    zh
+з    z
+и    i
+й    y
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts,s
+ч    ch
+ш    sh
+щ    sch
+ъ    —,y
+ы    y
+ь    —,y
+э    e
+ю    yu
+я    ya
+</code></pre><p>Буква <code>Ё</code> →</p>
+<ul>
+<li><code>YO</code> после <code>Ь</code> и <code>Ъ</code>;</li>
+<li><code>E</code> в остальных случаях.</li>
+</ul>
+<p>Буква <code>Ц</code> →</p>
+<ul>
+<li><code>S</code> после <code>Т</code>;</li>
+<li><code>TS</code> в остальных случаях.</li>
+</ul>
+<p>Буква <code>Ь</code> →</p>
+<ul>
+<li><code>Y</code> перед <code>A</code>, <code>Е</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Э</code>;</li>
+<li>опускается в остальных случаях.</li>
+</ul>
+<p>Буква <code>Ъ</code> →</p>
+<ul>
+<li><code>Y</code> перед <code>A</code>, <code>Е</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Э</code>;</li>
+<li>опускается в остальных случаях.</li>
+</ul>
+<p>Окончания:</p>
+<ul>
+<li><code>-ЫЙ</code> → <code>-Y</code>;</li>
+<li><code>-ИЙ</code> → <code>-Y</code>.</li>
+</ul>
+<p>ℹ️ <a href=https://www.artlebedev.ru/metro/map4/>artlebedev.ru</a></p>
+</div>
+</div><footer class=post__footer>
+<div class=row>
+<div class=col-xs-12>
+</div>
+</div>
+</footer></article>
+<aside class=post__related>
+<div class="post__nav article">
+<div class=row>
+<div class="col-xs-12 col-sm-6">
+<p>&larr;&nbsp;<a href=https://iuliia.ru/scientific/>Научная</a></p>
+</div>
+<div class="col-xs-12 col-sm-6">
+<p><a href=https://iuliia.ru/mvd-782/>МВД 782-2000</a>&nbsp;&rarr;</p>
+</div>
+</div>
+</div></aside>
+</div>
+</div>
+<footer class="container footer">
+<ul class=naked-list>
+<li class=footer__item>
+<a href=https://antonz.ru/>Антон Жиянов</a>
+<a href=https://twitter.com/nalgeon class=footer__social-link><i class="fab fa-twitter"></i><span>Twitter</span></a>
+</li>
+</ul>
+</footer>
+<script defer src=https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js></script>
+<script src=https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js></script>
+<script defer src=/assets/js/site.min.78e24a268bf34b3050f5ca573a10da85c1121d3e2950da2a37a0cd28f9059aba.js></script></body>
+</html>

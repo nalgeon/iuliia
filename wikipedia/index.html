@@ -1,0 +1,169 @@
+<!doctype html><html lang=en>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Википедия</title>
+<meta name=description content="Схема транслитерации Википедии">
+<meta name=robots content="index, follow">
+<link rel=stylesheet type=text/css href=/assets/css/style.899a77700a13bea9d72dc8abff528dd1d3c1c0b622fd342afe7df197f0dd3c5a.css>
+<link rel=icon href=/assets/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/assets/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=/assets/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=/assets/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#fff">
+<meta name=msapplication-TileColor content="#fff">
+<link rel=canonical href=https://iuliia.ru/wikipedia/>
+<meta name=author content="Антон Жиянов">
+<meta property="og:site_name" content="Юлия → Iuliia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Википедия">
+<meta property="og:description" content="Схема транслитерации Википедии">
+<meta property="og:url" content="https://iuliia.ru/wikipedia/">
+<meta property="og:image" content="https://iuliia.ru/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Википедия">
+<meta name=twitter:description content="Схема транслитерации Википедии">
+<meta name=twitter:url content="https://iuliia.ru/wikipedia/">
+<meta name=twitter:site content="@nalgeon">
+<meta name=twitter:image content="https://iuliia.ru/"></head>
+<body>
+<div class=header>
+<div class=container>
+<div class=row>
+<div class="col-xs-6 col-sm-3">
+<a href=/>
+<strong>Юлия → Iuliia</strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=storey>
+<div class=container>
+<article class=post>
+<div class=row>
+<div class="col-xs-12 col-sm-10 article">
+<header>
+<h1>Википедия</h1>
+</header>
+<p>Схема транслитерации, которую использует Википедия. Сделана на основе <a href=/bgn-pcdn>BGN/PCGN</a>со значительными модификациями. Самая продуманная, звучит лучше всех и выглядит приятнее большинства прочих схем. Пожалуй, неудачной вышла только буква <code>Щ</code>.</p>
+<p>📅 2005 • ✔️ действует • ⚪ без диакритики</p>
+<p>Особенности:</p>
+<ul>
+<li>Нечастое написание <code>Ё</code> как <code>YO</code></li>
+<li>Редчайшее написание <code>Ъ</code>, <code>Ы</code>, <code>Ь</code> как <code>Y</code></li>
+<li>Множество нюансов, самые сложные правила</li>
+</ul>
+<div class=tabs>
+<input name=tabs type=radio id=text checked class=input>
+<label for=text class=label><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref=source contenteditable=true class=editable><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref=target data-schema=wikipedia><code>Yuliya, syesh yeshchyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu</code></pre>
+</div>
+<input name=tabs type=radio id=js class=input>
+<label for=js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.WIKIPEDIA);</code></pre>
+<input name=tabs type=radio id=python class=input>
+<label for=python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.WIKIPEDIA)</code></pre>
+</div>
+<h2 id=правила>Правила</h2>
+<pre tabindex=0><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    ye,e
+ё    yo
+ж    zh
+з    z
+и    i
+й    y
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts
+ч    ch
+ш    sh
+щ    shch
+ъ    y
+ы    y
+ь    y
+э    e
+ю    yu
+я    ya
+</code></pre><p>Буква <code>Е</code> →</p>
+<ul>
+<li><code>YE</code> в начале слова (Ельцин → Yeltsin);</li>
+<li><code>YE</code> после гласных, <code>Ь</code>, <code>Ъ</code> (Раздольное → Razdolnoye, Юрьев → Yuryev);</li>
+<li><code>E</code> в остальных случаях (Белкин → Belkin).</li>
+</ul>
+<p>Буква <code>И</code> → <code>I</code>, кроме окончаний на <code>-ИЙ</code></p>
+<p>Буква <code>Й</code> → <code>Y</code>, кроме окончаний на <code>-ИЙ</code> и <code>-ЫЙ</code> (Бийск → Biysk)</p>
+<p>Буква <code>Ъ</code> →</p>
+<ul>
+<li>опускается перед <code>Е</code>, <code>Ё</code>, <code>Ю</code>, <code>Я</code> (Подъярский → Podyarsky);</li>
+<li><code>Y</code> перед <code>А</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Ы</code>, <code>Э</code> (Мусийкъонгийкоте → Musiykyongiykote).</li>
+</ul>
+<p>Буква <code>Ы</code> → <code>Y</code>, кроме окончаний на <code>-ЫЙ</code> (Давыдов → Davydov)</p>
+<p>Буква <code>Ь</code> →</p>
+<ul>
+<li>опускается перед <code>Е</code>, <code>Ё</code>, <code>Ю</code>, <code>Я</code> (Усолье → Usolye);</li>
+<li>опускается в конце слова (Выхухоль → Vykhukhol);</li>
+<li>опускается перед согласной (Дальнегорск → Dalnegorsk);</li>
+<li><code>Y</code> перед <code>А</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Ы</code>, <code>Э</code> (Ильинский → Ilyinsky).</li>
+</ul>
+<p>Окончания:</p>
+<ul>
+<li><code>-ЫЙ</code> → <code>-Y</code> (Красный → Krasny)</li>
+<li><code>-ИЙ</code> → <code>-Y</code> в именах и русских прилагательных (Великий → Veliky)</li>
+<li><code>-ИЙ</code> → <code>IY</code> в существительных и нерусских названиях (Рыркайпий → Ryrkaypiy)</li>
+<li><code>-ЫЕ</code> → <code>YE</code> (Набережные Челны → Naberezhnye Chelny)</li>
+</ul>
+<p>ℹ️ <a href=https://en.wikipedia.org/wiki/Wikipedia:Romanization_of_Russian>wikipedia.org</a></p>
+</div>
+</div><footer class=post__footer>
+<div class=row>
+<div class=col-xs-12>
+</div>
+</div>
+</footer></article>
+<aside class=post__related>
+<div class="post__nav article">
+<div class=row>
+<div class="col-xs-12 col-sm-6">
+<p>&larr;&nbsp;<a href=https://iuliia.ru/gost-16876/>ГОСТ 16876-71</a></p>
+</div>
+<div class="col-xs-12 col-sm-6">
+<p><a href=https://iuliia.ru/ungegn-1987/>UNGEGN 1987 V/18</a>&nbsp;&rarr;</p>
+</div>
+</div>
+</div></aside>
+</div>
+</div>
+<footer class="container footer">
+<ul class=naked-list>
+<li class=footer__item>
+<a href=https://antonz.ru/>Антон Жиянов</a>
+<a href=https://twitter.com/nalgeon class=footer__social-link><i class="fab fa-twitter"></i><span>Twitter</span></a>
+</li>
+</ul>
+</footer>
+<script defer src=https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js></script>
+<script src=https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js></script>
+<script defer src=/assets/js/site.min.78e24a268bf34b3050f5ca573a10da85c1121d3e2950da2a37a0cd28f9059aba.js></script></body>
+</html>

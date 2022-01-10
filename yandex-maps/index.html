@@ -1,0 +1,141 @@
+<!doctype html><html lang=en>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Яндекс.Карты</title>
+<meta name=description content="Схема транслитерации Яндекс.Карт">
+<meta name=robots content="index, follow">
+<link rel=stylesheet type=text/css href=/assets/css/style.899a77700a13bea9d72dc8abff528dd1d3c1c0b622fd342afe7df197f0dd3c5a.css>
+<link rel=icon href=/assets/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/assets/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=/assets/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=/assets/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#fff">
+<meta name=msapplication-TileColor content="#fff">
+<link rel=canonical href=https://iuliia.ru/yandex-maps/>
+<meta name=author content="Антон Жиянов">
+<meta property="og:site_name" content="Юлия → Iuliia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Яндекс.Карты">
+<meta property="og:description" content="Схема транслитерации Яндекс.Карт">
+<meta property="og:url" content="https://iuliia.ru/yandex-maps/">
+<meta property="og:image" content="https://iuliia.ru/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="Яндекс.Карты">
+<meta name=twitter:description content="Схема транслитерации Яндекс.Карт">
+<meta name=twitter:url content="https://iuliia.ru/yandex-maps/">
+<meta name=twitter:site content="@nalgeon">
+<meta name=twitter:image content="https://iuliia.ru/"></head>
+<body>
+<div class=header>
+<div class=container>
+<div class=row>
+<div class="col-xs-6 col-sm-3">
+<a href=/>
+<strong>Юлия → Iuliia</strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=storey>
+<div class=container>
+<article class=post>
+<div class=row>
+<div class="col-xs-12 col-sm-10 article">
+<header>
+<h1>Яндекс.Карты</h1>
+</header>
+<p>Правила Яндекса для адресов. Слегка улучшенная версия <a href=/yandex-money>Яндекс-денег</a>.</p>
+<p>📅 2015 • ✔️ действует • ⚪ без диакритики</p>
+<p>Особенности:</p>
+<ul>
+<li>Нечастое написание <code>Ё</code> как <code>YO</code></li>
+<li>Приятная <code>Щ</code> → <code>SCH</code></li>
+<li>Без апострофов для <code>Ъ</code> и <code>Ь</code></li>
+</ul>
+<div class=tabs>
+<input name=tabs type=radio id=text checked class=input>
+<label for=text class=label><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref=source contenteditable=true class=editable><code>Россия, город Йошкар-Ола, улица Яна Крастыня</code></pre>
+<pre data-ref=target data-schema=yandex_maps><code>Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre>
+</div>
+<input name=tabs type=radio id=js class=input>
+<label for=js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Россия, город Йошкар-Ола, улица Яна Крастыня";
+var result = iuliia.translate(source, iuliia.YANDEX_MAPS);</code></pre>
+<input name=tabs type=radio id=python class=input>
+<label for=python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
+result = iuliia.translate(source, schema=iuliia.YANDEX_MAPS)</code></pre>
+</div>
+<h2 id=правила>Правила</h2>
+<pre tabindex=0><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    e
+ё    yo
+ж    zh
+з    z
+и    i
+й    y
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts
+ч    ch
+ш    sh
+щ    sch
+ъ    —
+ы    y
+ь    —
+э    e
+ю    yu
+я    ya
+</code></pre><p>Буква <code>Ъ</code> не пишется, кроме <code>ЪЕ</code> → <code>YE</code> (подъезд → podyezd)</p>
+<p>Буквы <code>Ы</code> → <code>Y</code>, кроме окончаний на <code>-ЫЙ</code> (Сыктывкар → Syktyvkar)</p>
+<p>Окончание <code>ЫЙ</code> → <code>IY</code> (Красный → Krasniy)</p>
+<p>ℹ️ <a href=https://yandex.ru/support/nmaps/app_transliteration.html>yandex.ru</a></p>
+</div>
+</div><footer class=post__footer>
+<div class=row>
+<div class=col-xs-12>
+</div>
+</div>
+</footer></article>
+<aside class=post__related>
+<div class="post__nav article">
+<div class=row>
+<div class="col-xs-12 col-sm-6">
+<p><a href=https://iuliia.ru/yandex-money/>Яндекс.Деньги</a>&nbsp;&rarr;</p>
+</div>
+</div>
+</div></aside>
+</div>
+</div>
+<footer class="container footer">
+<ul class=naked-list>
+<li class=footer__item>
+<a href=https://antonz.ru/>Антон Жиянов</a>
+<a href=https://twitter.com/nalgeon class=footer__social-link><i class="fab fa-twitter"></i><span>Twitter</span></a>
+</li>
+</ul>
+</footer>
+<script defer src=https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js></script>
+<script src=https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js></script>
+<script defer src=/assets/js/site.min.78e24a268bf34b3050f5ca573a10da85c1121d3e2950da2a37a0cd28f9059aba.js></script></body>
+</html>

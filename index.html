@@ -1,0 +1,619 @@
+<!doctype html><html lang=en>
+<head>
+<meta name=generator content="Hugo 0.89.0"><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Юлия → Iuliia</title>
+<meta name=description content="Транслитерация без головной боли.">
+<meta name=robots content="index, follow">
+<link rel=stylesheet type=text/css href=/assets/css/style.899a77700a13bea9d72dc8abff528dd1d3c1c0b622fd342afe7df197f0dd3c5a.css>
+<link rel=icon href=/assets/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/assets/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=/assets/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=/assets/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#fff">
+<meta name=msapplication-TileColor content="#fff">
+<link rel=alternate type=application/rss+xml href=https://iuliia.ru/index.xml>
+<link rel=canonical href=https://iuliia.ru/>
+<meta name=author content="Антон Жиянов">
+<meta property="og:site_name" content="Юлия → Iuliia">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Юлия → Iuliia">
+<meta property="og:description" content="Транслитерация без головной боли.">
+<meta property="og:url" content="https://iuliia.ru/">
+<meta property="og:image" content="https://iuliia.ru/">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Юлия → Iuliia">
+<meta name=twitter:description content="Транслитерация без головной боли.">
+<meta name=twitter:url content="https://iuliia.ru/">
+<meta name=twitter:site content="@nalgeon">
+<meta name=twitter:image content="https://iuliia.ru/"></head>
+<body><section id=promo class="storey hero__block">
+<div class=container>
+<div class=row>
+<div class="col-xs-12 col-sm-10 col-md-8">
+<h1 class=storey__header>Юлия → Iuliia</h1>
+<p class=promo__subheader>Выберите подходящую схему транслитерации и используйте в коде
+без головной боли.</p>
+<ul class=oneliner>
+<li><a href=#usecase>по ситуации</a></li>
+<li><a href=#main>все схемы</a></li>
+<li><a href=#code>исходники</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<div class="storey storey--notop home__block">
+<div class=container>
+<div class=row>
+<div class="col-xs-12 col-sm-4">
+<strong>Для любой ситуации</strong>
+<p>Загранпаспорт, банковская карта, почтовый адрес, ФИО...</p>
+</div>
+<div class="col-xs-12 col-sm-4">
+<strong>20 схем транслитерации</strong>
+<p>ГОСТы, МВД, Почта, Википедия, ISO, UN, Library of Congress, ...</p>
+</div>
+<div class="col-xs-12 col-sm-4">
+<strong>Open Source</strong>
+<p>Библиотеки для 10 языков</p>
+</div>
+</div>
+</div>
+</div><div id=usecase class="storey storey--notop home__block">
+<div class=container>
+<h2 class=storey__header>По ситуации</h2>
+<ul class=usecases>
+<li><a href=#foreign-passport class="button button--inverted button--small">Загранпаспорт</a></li>
+<li><a href=#driving-license class="button button--inverted button--small">Водительское
+удостоверение</a></li>
+<li><a href=#bank-card class="button button--inverted button--small">Банковская карта</a></li>
+<li><a href=#address class="button button--inverted button--small">Почтовый адрес</a></li>
+<li><a href=#name class="button button--inverted button--small">ФИО, email или юзернейм</a></li>
+<li><a href=#slug class="button button--inverted button--small">URL с кириллицей</a></li>
+<li><a href=#best class="button button--inverted button--small">Красивая</a></li>
+<li><a href=#unambiguous class="button button--inverted button--small">Обратимая (cyr ↔ lat)</a></li>
+</ul>
+<div class=row>
+<div id=foreign-passport class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Загранпаспорт
+→ </i><a href=/icao-doc-9303>ICAO DOC 9303</a>
+</h3>
+<p>Местами выглядит уродливо, но ничего не поделаешь — такой стандарт решило
+использовать МИД.</p>
+<div class=tabs><input name=foreign-passport-tabs type=radio id=foreign-passport-text checked><label for=foreign-passport-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия Щеглова</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=icao_doc_9303><code>Iuliia Shcheglova</code></pre>
+</div><input name=foreign-passport-tabs type=radio id=foreign-passport-js><label for=foreign-passport-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия Щеглова";
+var schema = iuliia.ICAO_DOC_9303;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Iuliia Shcheglova</code></pre><input name=foreign-passport-tabs type=radio id=foreign-passport-python><label for=foreign-passport-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия Щеглова"
+schema = iuliia.ICAO_DOC_9303
+result = iuliia.translate(source, schema)
+print(result);
+# Iuliia Shcheglova</code></pre>
+</div>
+<p>Лайфхак: если написать отдельное заявление при подаче документов, сделают паспорт
+с нормальной
+транслитерацией. Тогда подойдёт старый стандарт <a href=/mvd-310>МВД 310</a>
+или <a href=/mosmetro>Мосметро</a>.</p>
+</div>
+<div id=driving-license class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Водительское удостоверение
+→ </i><a href=/icao-doc-9303>ICAO DOC 9303</a>
+</h3>
+<p>Местами выглядит уродливо, но ничего не поделаешь — такой стандарт решило
+использовать МВД.</p>
+<div class=tabs><input name=driving-license-tabs type=radio id=driving-license-text checked><label for=driving-license-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия Щеглова</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=icao_doc_9303><code>Iuliia Shcheglova</code></pre>
+</div><input name=driving-license-tabs type=radio id=driving-license-js><label for=driving-license-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия Щеглова";
+var schema = iuliia.ICAO_DOC_9303;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Iuliia Shcheglova</code></pre><input name=driving-license-tabs type=radio id=driving-license-python><label for=driving-license-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия Щеглова"
+schema = iuliia.ICAO_DOC_9303
+result = iuliia.translate(source, schema)
+print(result);
+# Iuliia Shcheglova</code></pre>
+</div>
+<p>Лайфхак: если написать отдельное заявление при подаче документов, сделают паспорт
+с нормальной
+транслитерацией. Тогда подойдёт старый стандарт <a href=/mvd-782>МВД 782</a>
+или <a href=/mosmetro>Мосметро</a>.</p>
+</div>
+<div id=bank-card class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Банковская карта
+→ </i><a href=/mosmetro>Мосметро</a>
+</h3>
+<p>Самая лаконичная и визуально приятная схема — то, что надо для банковской карты.
+</p>
+<div class=tabs><input name=bank-card-tabs type=radio id=bank-card-text checked><label for=bank-card-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия Щеглова</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=mosmetro><code>Yuliya Scheglova</code></pre>
+</div><input name=bank-card-tabs type=radio id=bank-card-js><label for=bank-card-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия Щеглова";
+var schema = iuliia.MOSMETRO;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Yuliya Scheglova</code></pre><input name=bank-card-tabs type=radio id=bank-card-python><label for=bank-card-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия Щеглова"
+schema = iuliia.MOSMETRO
+result = iuliia.translate(source, schema)
+print(result);
+# Yuliya Scheglova</code></pre>
+</div>
+<p>Альтернативные варианты:</p>
+<ul>
+<li><a href=/wikipedia>Википедия</a> — хорошо подходит для карты, если не смущает
+<code>Щ</code> → <code>SHCH</code> и <code>Ё</code> → <code>YO</code>.
+</li>
+<li><a href=/yandex-money>Яндекс.Деньги</a> — неплохая схема, где
+<code>Щ</code> → <code>SCH</code>, а <code>Ё</code> → <code>E</code>.
+Но некрасивые
+окончания <code>ИЙ</code> → <code>II</code> и
+<code>ЫЙ</code> → <code>YI</code>.
+</li>
+<li><a href=/icao-doc-9303>ICAO DOC 9303</a> — если требуется строгое соответствие
+загранпаспорту.</li>
+</ul>
+</div>
+<div id=address class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Почтовый адрес
+→ </i><a href=/wikipedia>Википедия</a>
+</h3>
+<p>Самая продуманная схема. Для почтовых адресов — идеально.</p>
+<div class=tabs><input name=address-tabs type=radio id=address-text checked><label for=address-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Россия, город Йошкар-Ола, улица Яна Крастыня</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=wikipedia><code>Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre>
+</div><input name=address-tabs type=radio id=address-js><label for=address-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Россия, город Йошкар-Ола, улица Яна Крастыня";
+var schema = iuliia.WIKIPEDIA;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre><input name=address-tabs type=radio id=address-python><label for=address-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
+schema = iuliia.WIKIPEDIA
+result = iuliia.translate(source, schema)
+print(result);
+# Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre>
+</div>
+<p>Альтернативные варианты:</p>
+<ul>
+<li><a href=/mosmetro>Мосметро</a> — практически не уступает Википедии.</li>
+<li><a href=/yandex-maps>Яндекс.Карты</a> — неплохая схема, где
+<code>Щ</code> → <code>SCH</code>.
+</li>
+<li><a href=/bs-2979>BS 2979:1958</a> — терпимый вариант для поклонников британской
+системы.</li>
+</ul>
+</div>
+<div id=name class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>ФИО, email или юзернейм
+→ </i><a href=/mosmetro>Мосметро</a>
+</h3>
+<p>Самая лаконичная и визуально приятная схема — то, что надо для ФИО
+и юзернейма.</p>
+<div class=tabs><input name=name-tabs type=radio id=name-text checked><label for=name-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия Щеглова</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=mosmetro><code>Yuliya Scheglova</code></pre>
+</div><input name=name-tabs type=radio id=name-js><label for=name-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия Щеглова";
+var schema = iuliia.MOSMETRO;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Yuliya Scheglova</code></pre><input name=name-tabs type=radio id=name-python><label for=name-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия Щеглова"
+schema = iuliia.MOSMETRO
+result = iuliia.translate(source, schema)
+print(result);
+# Yuliya Scheglova</code></pre>
+</div>
+<p>Альтернативные варианты:</p>
+<ul>
+<li><a href=/wikipedia>Википедия</a> — хорошо подходит для ФИО, если не смущает
+<code>Щ</code> → <code>SHCH</code> и <code>Ё</code> → <code>YO</code>.
+</li>
+<li><a href=/yandex-money>Яндекс.Деньги</a> — неплохая схема, где
+<code>Щ</code> → <code>SCH</code>, а <code>Ё</code> → <code>E</code>.
+Но некрасивые
+окончания <code>ИЙ</code> → <code>II</code> и
+<code>ЫЙ</code> → <code>YI</code>.
+</li>
+</ul>
+</div>
+<div id=slug class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>URL с кириллицей
+→ </i><a href=/wikipedia>Википедия</a>
+</h3>
+<p>Нормально выглядит и понятна поисковикам.</p>
+<div class=tabs><input name=slug-tabs type=radio id=slug-text checked><label for=slug-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>http://mysite.ru/статьи/как-съесть-ещё-французских-булок-в-Йошкар-Оле</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=wikipedia><code>http://mysite.ru/statyi/kak-syest-eshchyo-frantsuzskikh-bulok-v-Yoshkar-Ole</code></pre>
+</div><input name=slug-tabs type=radio id=slug-js><label for=slug-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "/статьи/как-съесть-ещё-французских-булок-в-Йошкар-Оле";
+var schema = iuliia.WIKIPEDIA;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// /statyi/kak-syest-eshchyo-frantsuzskikh-bulok-v-Yoshkar-Ole</code></pre><input name=slug-tabs type=radio id=slug-python><label for=slug-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "/статьи/как-съесть-ещё-французских-булок-в-Йошкар-Оле"
+schema = iuliia.WIKIPEDIA
+result = iuliia.translate(source, schema)
+print(result);
+# /statyi/kak-syest-eshchyo-frantsuzskikh-bulok-v-Yoshkar-Ole</code></pre>
+</div>
+<p>Альтернативные варианты:</p>
+<ul>
+<li><a href=/mosmetro>Мосметро</a> — лишь немного уступает Википедии
+по звучанию.</li>
+</ul>
+</div>
+<div id=best class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Красивая
+→ </i><a href=/mosmetro>Мосметро</a>
+</h3>
+<p>Конечно, красота — понятие субъективное. Самых продуманных схемы две: <a href=/wikipedia>Википедия</a> (лучше звучит) и <a href=/mosmetro>Мосметро</a>
+(приятнее выглядит). Лично я выбираю Мосметро
+за нормальную <code>Щ</code>.</p>
+<div class=tabs><input name=best-tabs type=radio id=best-text checked><label for=best-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=mosmetro><code>Yuliya, syesh esche etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly</code></pre>
+</div><input name=best-tabs type=radio id=best-js><label for=best-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы";
+var schema = iuliia.MOSMETRO;
+var result = iuliia.translate(source, schema);
+console.log(result);
+// Yuliya, syesh esche etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly</code></pre><input name=best-tabs type=radio id=best-python><label for=best-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы"
+schema = iuliia.MOSMETRO
+result = iuliia.translate(source, schema)
+print(result);
+# Yuliya, syesh esche etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly</code></pre>
+</div>
+<p>Альтернативные варианты:</p>
+<ul>
+<li><a href=/wikipedia>Википедия</a> — лучшая по фонетике.</li>
+<li><a href=/yandex-maps>Яндекс.Карты</a> — неплохая схема, где
+<code>Щ</code> → <code>SCH</code>.
+</li>
+<li><a href=/gost-779>ГОСТ 7.79-2000</a>, он же ISO 9:1995 — если вам по душе
+диакритика.</li>
+</ul>
+</div>
+<div id=unambiguous class="tab col-xs-12 col-sm-10 col-md-8 typography">
+<h3>Обратимая
+→ </i><a href=/gost-779>ГОСТ 7.79-2000</a> (aka ISO
+9:1995)
+</h3>
+<p>Специально придумана так, чтобы быть однозначной и обратимой (cyr ↔ lat). Причём
+обратимы оба
+варианта транслитерации — с диакритикой и без.</p>
+<div class=tabs><input name=unambiguous-tabs type=radio id=unambiguous-text checked><label for=unambiguous-text class=label><span>Пример</span></label>
+<div class=panel>
+<pre data-ref=source class=editable contenteditable=true><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<p>превращается в:</p>
+<pre data-ref=target data-schema=gost_779><code>Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû</code></pre>
+<p>или в:</p>
+<pre data-ref=target data-schema=gost_779_alt><code>Yuliya, s``esh` eshhyo е`tix myagkix franczuzskix bulok iz Joshkar-Oly`, da vy`pej altajskogo chayu</code></pre>
+</div><input name=unambiguous-tabs type=radio id=unambiguous-js><label for=unambiguous-js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.GOST_779);
+console.log(result);
+// Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû
+var result = iuliia.translate(source, iuliia.GOST_779_ALT);
+console.log(result);
+// Yuliya, s``esh` eshhyo е`tix myagkix franczuzskix bulok iz Joshkar-Oly`, da vy`pej altajskogo chayu</code></pre>
+<input name=unambiguous-tabs type=radio id=unambiguous-python><label for=unambiguous-python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.GOST_779)
+print(result);
+# Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû
+result = iuliia.translate(source, schema=iuliia.GOST_779_ALT)
+print(result);
+# Yuliya, s``esh` eshhyo е`tix myagkix franczuzskix bulok iz Joshkar-Oly`, da vy`pej altajskogo chayu</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div><div id=main class="storey storey--notop home__block">
+<div class=container>
+<h2 class=storey__header>Основные схемы</h2>
+<div class=row>
+<div class="col-xs-12 col-sm-5 flex">
+<div id=top-wikipedia class="content tile tile--small tile--gray">
+<p class=tile__header>⭐ <a href=/wikipedia>Википедия</a></p>
+<p>Приятно звучит и неплохо выглядит. Лучший выбор для адресов, хороший выбор для всего
+остального.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 flex">
+<div id=top-mosmetro class="content tile tile--small tile--gray">
+<p class=tile__header>⭐ <a href=/mosmetro>Мосметро</a></p>
+<p>Приятно выглядит и неплохо звучит. Лучший выбор для ФИО, хороший выбор для всего остального.
+</p>
+</div>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-12 col-sm-5 flex">
+<div id=top-gost-779 class="content tile tile--small tile--gray">
+<p class=tile__header>📚 <a href=/gost-779>ГОСТ 7.79-2000</a></p>
+<p>Универсальный международный стандарт <span class=nowrap>ISO 9:1995</span>. Громоздкая,
+зато обратимая. С диакритикой и без.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 flex">
+<div id=top-icao-doc-9303 class="content tile tile--small tile--gray">
+<p class=tile__header>👩 <a href=/icao-doc-9303>ICAO DOC 9303</a></p>
+<p>Международный стандарт для ФИО. Используется для водительских удостоверений
+и загранпаспортов. Без диакритики.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div id=all class="storey storey--notop">
+<div class=container>
+<div class=row>
+<div class="col-xs-12 col-sm-10 home__block">
+<h2 class=storey__header>Все схемы</h2>
+<p>Классификация</p>
+<ul id=filter>
+<li>по назначению: <a href=#name data-filter=purpose data-value=name class="filter filter--active">👩 ФИО</a><a href=#address data-filter=purpose data-value=address class="filter filter--active">🏠 адреса</a><a href=#general data-filter=purpose data-value=general class="filter filter--active">📚 универсальные</a></li>
+<li>по формату: <a href=#dia-yes data-filter=dia data-value=yes class="filter filter--active">㊙️ с диакритикой (ё, č, š)</a><a href=#dia-no data-filter=dia data-value=no class="filter filter--active">⚪ без неё</a>
+</li>
+<li>по стране: <a href=#ru data-filter=country data-value=ru class="filter filter--active">🇷🇺 российские</a><a href=#en data-filter=country data-value=en class="filter filter--active">🇺🇸 англо-американские</a><a href=#un data-filter=country data-value=un class="filter filter--active">🇺🇳 международные</a>
+</li>
+<li>по статусу: <a href=#actual data-filter=state data-value=actual class="filter filter--active">✔️ действующие</a><a href=#deprecated data-filter=state data-value=deprecated class="filter filter--active">💀 устаревшие</a></li>
+</ul>
+</div>
+</div>
+<div id=all-list class=row>
+<div id=gost-16876 data-purpose=general data-dia=yes data-country=ru data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚㊙️💀 <a href=/gost-16876>ГОСТ 16876-71</a></p>
+<p>Также известна как <span class=nowrap>СТ СЭВ 1362-78</span> и <span class=nowrap>GOST
+1983</span>. Старая и страшная. Заменена на <a href=/gost-779 class=nowrap>ГОСТ
+7.79-2000</a></p>
+</div>
+</div>
+<div id=gost-779 data-purpose=general data-dia=yes,no data-country=ru,un data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/gost-779>ГОСТ 7.79-2000</a></p>
+<p>Международный стандарт <span class=nowrap>ISO 9:1995</span>. Громоздкая,
+зато обратимая.
+Есть вариант с диакритикой.</p>
+</div>
+</div>
+<div id=gost-52290 data-purpose=address data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>🏠⚪✔️<a href=/gost-52290>ГОСТ Р 52290-2004</a></p>
+<p>Стандарт для дорожных знаков. Неплохая, с одинарными апострофами. Три варианта
+написания Ё.
+</p>
+</div>
+</div>
+<div id=gost-52535 data-purpose=name data-dia=no data-country=ru data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>👩⚪💀 <a href=/gost-52535>ГОСТ Р 52535.1-2006</a></p>
+<p>В 2000-х использовалась ФМС для загранпаспортов. Весьма уродливая. Заменена на <a href=/icao-doc-9303 class=nowrap>ICAO DOC 9303</a></p>
+</div>
+</div>
+<div id=gost-7034 data-purpose=general data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/gost-7034>ГОСТ Р 7.0.34-2014</a></p>
+<p>Для библиотек и издательств. В меру приятная. Расслабленная: есть альтернативы для
+многих
+букв, можно без апострофов.</p>
+</div>
+</div>
+<div id=mvd-310 data-purpose=name data-dia=no data-country=ru data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>👩⚪💀 <a href=/mvd-310>МВД 310-1997</a></p>
+<p>В 1990-х и 2000-х использовалась для загранпаспортов. Плохо формализована. Есть
+«французский»
+вариант без апострофов. Заменена на <a href=/icao-doc-9303 class=nowrap>ICAO
+DOC
+9303</a></p>
+</div>
+</div>
+<div id=mvd-782 data-purpose=name data-dia=no data-country=ru data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>👩⚪💀 <a href=/mvd-782>МВД 782-2000</a></p>
+<p>В 2000-х использовалась для водительских удостоверений. Неплохая, с одинарными
+апострофами.
+Заменена на <a href=/icao-doc-9303 class=nowrap>ICAO DOC 9303</a></p>
+</div>
+</div>
+<div id=telegram data-purpose=general data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/telegram>Телеграммы</a></p>
+<p>Правила Минсвязи для международных телеграмм. Некрасивая, зато без апострофов.</p>
+</div>
+</div>
+<div id=iso-9-1954 data-purpose=general data-dia=yes data-country=un data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚㊙️💀 <a href=/iso-9-1954>ISO/R 9:1954</a></p>
+<p>Древний международный стандарт. Отвратительная. Заменена на <a href=/iso-9-1968 class=nowrap>ISO/R 9:1968</a>, затем на <a href=/gost-779 class=nowrap>ISO
+9:1995</a></p>
+</div>
+</div>
+<div id=iso-9-1968 data-purpose=general data-dia=yes data-country=un data-state=deprecated class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚㊙️💀 <a href=/iso-9-1968>ISO/R 9:1968</a></p>
+<p>Древний международный стандарт. Максимально отвратительная. Заменена на <a href=/gost-779 class=nowrap>ISO 9:1995</a></p>
+</div>
+</div>
+<div id=icao-doc-9303 data-purpose=name data-dia=no data-country=un data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>👩⚪✔️ <a href=/icao-doc-9303>ICAO DOC 9303</a></p>
+<p>Международный авиационный стандарт для ФИО. Используется для загранпаспортов и в/у.
+Уродует
+Ю и Я.</p>
+</div>
+</div>
+<div id=ungegn-1987 data-purpose=address data-dia=yes data-country=un data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>🏠㊙️✔️ <a href=/ungegn-1987>UNGEGN 1987 V/18</a></p>
+<p>Стандарт ООН. Основана на <a href=/gost-16876 class=nowrap>ГОСТ 16876-71</a>.
+Такая же страшная, но до сих пор не отменена.</p>
+</div>
+</div>
+<div id=bgn-pcgn data-purpose=address data-dia=yes data-country=en data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>🏠㊙️✔️ <a href=/bgn-pcgn>BGN/PCGN</a></p>
+<p>Древнейший стандарт ООН. В целом адекватная, но зачем-то оставила Ё с точками.</p>
+</div>
+</div>
+<div id=ala-lc data-purpose=general data-dia=yes,no data-country=en data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/ala-lc>ALA-LC</a></p>
+<p>Используется американской Библиотекой Конгресса. Страшноватая. Есть вариант
+с диакритикой.</p>
+</div>
+</div>
+<div id=bs-2979 data-purpose=general data-dia=yes,no data-country=en data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/bs-2979>BS 2979:1958</a></p>
+<p>Используется издательством Oxford University Press. Изящно схлопывает окончания
+ИЙ и ЫЙ. Есть
+вариант с диакритикой.</p>
+</div>
+</div>
+<div id=scientific data-purpose=general data-dia=yes data-country=un data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚㊙️✔️ <a href=/scientific>Научная</a></p>
+<p>Используется в научных работах. Из неё вырос <a href=/gost-779 class=nowrap>ГОСТ
+16876-71</a>. Старая и страшная.</p>
+</div>
+</div>
+<div id=wikipedia data-purpose=general data-dia=no data-country=un data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/wikipedia>Википедия</a></p>
+<p>Продуманная, отлично звучит и неплохо выглядит. Неудачная Щ и спорная Ё.</p>
+</div>
+</div>
+<div id=mosmetro data-purpose=general data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>📚⚪✔️ <a href=/mosmetro>Мосметро</a></p>
+<p>Самая приятная визуально, хотя уступает <a href=/wikipedia>Википедии</a>
+по фонетике.</p>
+</div>
+</div>
+<div id=yandex-money data-purpose=name data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>👩⚪✔️ <a href=/yandex-money>Яндекс.Деньги</a></p>
+<p>Правила Яндекса для банковских карт. Простая и удобная.</p>
+</div>
+</div>
+<div id=yandex-maps data-purpose=address data-dia=no data-country=ru data-state=actual class="col-xs-12 col-sm-4 flex">
+<div class="content tile tile--small tile--gray">
+<p class=tile__header>🏠⚪✔️ <a href=/yandex-maps>Яндекс.Карты</a></p>
+<p>Правила Яндекса для адресов. Слегка улучшенная версия <a href=/yandex-money>Яндекс-денег</a>.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div><div id=code class="storey storey--notop home__block">
+<div class=container>
+<div class=row>
+<div class="col-xs-12 col-sm-10 col-md-8">
+<h2 class=storey__header>Исходники и библиотеки</h2>
+<p>Библиотека <code>iuliia</code> поддерживает все описанные сценарии и схемы транслитерации.
+Реализована для:</p>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-12 col-sm-3">
+<p><a href=https://github.com/belianin/iuliia-cs>C#</a></p>
+<p><a href=https://github.com/kandayo/iuliia-cr>Crystal</a></p>
+<p><a href=https://github.com/mehanizm/iuliia-go>Go</a></p>
+<p>
+<a href=https://github.com/massita99/iuliia-java>Java</a>
+<a href=https://github.com/homyakin/iuliia-java>+1</a>
+</p>
+</div>
+<div class="col-xs-12 col-sm-3">
+<p><a href=https://github.com/nalgeon/iuliia-js>JavaScript</a></p>
+<p><a href=https://github.com/perevoshchikov/iuliia-php>PHP</a></p>
+<p>
+<a href=https://github.com/rin-nas/postgresql-patterns-library/blob/master/functions/iuliia_translate.sql>PostgreSQL</a>
+</p>
+<p>
+<a href=https://github.com/nalgeon/iuliia-py>Python</a>
+⭐
+</p>
+</div>
+<div class="col-xs-12 col-sm-3">
+<p><a href=https://github.com/adnikiforov/iuliia-rb>Ruby</a></p>
+<p><a href=https://github.com/massita99/iuliia-rust>Rust</a></p>
+<p><a href=https://github.com/petertretyakov/Iuliia>Swift</a></p>
+</div>
+</div>
+<div class=row>
+<div class="col-xs-12 col-sm-10 col-md-8">
+<details>
+<summary>Почему такое странное название</summary>
+<p>Во-первых, большинство транслитных библиотек называются translit, transliteration и тому
+подобное — это скучно.</p>
+<p>Во-вторых, решительно невозможно пройти мимо «замечательного» стандарта <a href=/icao-doc-9303>ICAO DOC 9303</a>, который испоганил значительную часть
+имён и фамилий в загранпаспортах — в том числе несчастную Юлию (и меня тоже,
+чего скрывать).
+</p>
+<p>Так и появилась <code>iuliia</code>. Предпочитаю ласково называть её «йуля».</p>
+</details>
+<p>Если портируете библиотеку на свой любимый язык — буду рад добавить ссылку!</p>
+</div>
+</div>
+</div>
+</div><div id=reverse class="storey storey--notop home__block">
+<div class=container>
+<div class=row>
+<div class="col-xs-12 col-sm-10 col-md-8">
+<h2 class=storey__header>Обратная транслитерация</h2>
+<p>Преобразовать латиницу в кириллицу сильно сложнее, <code>iuliia</code> этого не умеет.
+Попробуйте, например, «<a href=https://dadata.ru/clean/>Дадату</a>» — она транслитерирует
+в обратную сторону ФИО и адреса.</p>
+</div>
+</div>
+</div>
+</div><footer class="container footer">
+<ul class=naked-list>
+<li class=footer__item>
+<a href=https://antonz.ru/>Антон Жиянов</a>
+<a href=https://twitter.com/nalgeon class=footer__social-link><i class="fab fa-twitter"></i><span>Twitter</span></a>
+</li>
+</ul>
+</footer>
+<script defer src=https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js></script>
+<script src=https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js></script>
+<script defer src=/assets/js/site.min.78e24a268bf34b3050f5ca573a10da85c1121d3e2950da2a37a0cd28f9059aba.js></script></body>
+</html>

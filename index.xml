@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Юлия → Iuliia</title><description>Транслитерация без головной боли.</description><link>https://iuliia.ru/</link><image><url>https://iuliia.ru/assets/favicon/favicon.png</url><title>Юлия → Iuliia</title><link>https://iuliia.ru/</link></image><generator>Hugo -- gohugo.io</generator><language>ru-ru</language><atom:link href="https://iuliia.ru/index.xml" rel="self" type="application/rss+xml"/><item><title>ALA-LC</title><link>https://iuliia.ru/ala-lc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/ala-lc/</guid><description>Схема транслитерации ALA-LC</description><content:encoded><![CDATA[<p>Схема транслитерации американской Библиотеки Конгресса. Страшноватая. Есть варианты с диакритикой и без.</p>
+<p>📅 1997 • ✔️ действует • ㊙️ ⚪ с диакритикой и без</p>
+<p>Особенности:</p>
+<ul>
+<li>Диакритика для <code>Ё</code>, <code>Й</code>, <code>Ц</code>, <code>Э</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Редчайшее использование символа верхней перемычки (<code>t͡s</code>) для <code>Ц</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Уродует слова с буквами <code>Ю</code> и <code>Я</code></li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="ala_lc"><code>I͡ulii͡a, sʺeshʹ eshchё ėtikh mi͡agkikh frant͡suzskikh bulok iz Ĭoshkar-Oly, da vypeĭ altaĭskogo chai͡u</code></pre>
+<pre data-ref="target" data-schema="ala_lc_alt"><code>Iuliia, s"esh' eshche etikh miagkikh frantsuzskikh bulok iz Ioshkar-Oly, da vypei altaiskogo chaiu</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.ALA_LC);
+var result_alt = iuliia.translate(source, iuliia.ALA_LC_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.ALA_LC)
+result_alt = iuliia.translate(source, schema=iuliia.ALA_LC_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat1 lat2
+а    a    a
+б    b    b
+в    v    v
+г    g    g
+д    d    d
+е    e    e
+ё    ë    e
+ж    zh   zh
+з    z    z
+и    i    i
+й    ĭ    i
+к    k    k
+л    l    l
+м    m    m
+н    n    n
+о    o    o
+п    p    p
+р    r    r
+с    s    s
+т    t    t
+у    u    u
+ф    f    f
+х    kh   kh
+ц    t͡s   ts
+ч    ch   ch
+ш    sh   sh
+щ    shch shch
+ъ    ʺ    &quot;
+ы    y    y
+ь    ʹ    '
+э    ė    e
+ю    i͡u   iu
+я    i͡a   ia
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href="https://www.loc.gov/catdir/cpso/romanization/russian.pdf">loc.gov</a>, <a href="https://en.wikipedia.org/wiki/ALA-LC_romanization_for_Russian">wikipedia.org</a></p>
+]]></content:encoded></item><item><title>BGN/PCGN</title><link>https://iuliia.ru/bgn-pcgn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/bgn-pcgn/</guid><description>Схема транслитерации BGN/PCGN</description><content:encoded><![CDATA[<p>Древняя схема транслитерации ООН для географических названий. Почти без диакритики, но зачем-то оставила <code>Ё</code> с точками.</p>
+<p>📅 1944 / 1947 • ✔️ действует • ㊙️ с диакритикой</p>
+<p>Особенности:</p>
+<ul>
+<li>Редчайшее написание <code>Ё</code> как <code>YЁ</code></li>
+<li>Другой диакритики, кроме <code>Ё</code>, нет</li>
+<li>Для разрешения неоднозначности между <code>Й</code> и <code>Ы</code> опционально использует интерпункт (<code>·</code>)</li>
+<li>Много нюансов</li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Россия, город Йошкар-Ола, улица Яна Крастыня</code></pre>
+<pre data-ref="target" data-schema="bgn_pcgn"><code>Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre>
+<pre data-ref="target" data-schema="bgn_pcgn_alt"><code>Rossiya, gorod Yoshkar-Ola, ulitsa Yana Krastynya</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Россия, город Йошкар-Ола, улица Яна Крастыня";
+var result = iuliia.translate(source, iuliia.BGN_PCGN);
+var result_alt = iuliia.translate(source, iuliia.BGN_PCGN_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
+result = iuliia.translate(source, schema=iuliia.BGN_PCGN)
+result_alt = iuliia.translate(source, schema=iuliia.BGN_PCGN_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    ye,e
+ё    yё,ё
+ж    zh
+з    z
+и    i
+й    y,y·
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts
+ч    ch
+ш    sh
+щ    shch
+ъ    ”
+ы    y,y·,·y
+ь    ’
+э    e,·e
+ю    yu
+я    ya
+</code></pre><p>Буква <code>Е</code> →</p>
+<ul>
+<li><code>YE</code> в начале слова;</li>
+<li><code>YE</code> после гласных, <code>Й</code>, <code>Ь</code>, <code>Ъ</code>;</li>
+<li><code>E</code> во всех остальных случаях.</li>
+</ul>
+<p>Буква <code>Ё</code> →</p>
+<ul>
+<li><code>YЁ</code> в начале слова;</li>
+<li><code>YЁ</code> после гласных, <code>Й</code>, <code>Ь</code>, <code>Ъ</code>;</li>
+<li><code>Ё</code> во всех остальных случаях.</li>
+</ul>
+<p>Буква <code>Й</code> (опционально) →</p>
+<ul>
+<li><code>Y·</code> перед <code>А</code>, <code>У</code>, <code>Ы</code>, <code>Э</code>;</li>
+<li><code>Y</code> в остальных случаях.</li>
+</ul>
+<p>Буква <code>Ы</code> (опционально) →</p>
+<ul>
+<li><code>Y·</code> перед <code>А</code>, <code>У</code>, <code>Ы</code>, <code>Э</code>;</li>
+<li><code>·Y</code> после гласной;</li>
+<li><code>Y</code> в остальных случаях.</li>
+</ul>
+<p>Буква <code>Э</code> (опционально) →</p>
+<ul>
+<li><code>·E</code> после согласных кроме <code>Й</code>;</li>
+<li><code>E</code> в остальных случаях.</li>
+</ul>
+<p>Буквосочетания (опционально) →</p>
+<ul>
+<li><code>ТС</code> → <code>T·S</code>;</li>
+<li><code>ШЧ</code> → <code>SH·CH</code>.</li>
+</ul>
+<p>ℹ️ <a href="https://en.wikipedia.org/wiki/BGN/PCGN_romanization_of_Russian">wikipedia.org</a></p>
+]]></content:encoded></item><item><title>British Standard 2979:1958</title><link>https://iuliia.ru/bs-2979/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/bs-2979/</guid><description>Схема транслитерации British Standard 2979:1958</description><content:encoded><![CDATA[<p>Схема транслитерации Британской библиотеки. Используется издательством Oxford University Press. Изящно схлопывает окончания <code>ИЙ</code> и <code>ЫЙ</code>, в остальном так себе.</p>
+<p>📅 1958 • ✔️ действует • ㊙️ ⚪ с диакритикой и без</p>
+<p>Особенности:</p>
+<ul>
+<li>Диакритика для <code>Ё</code>, <code>Й</code>, <code>Ы</code>, <code>Э</code></li>
+<li>Допускает схлопывание окончаний на <code>-Й</code></li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="bs_2979"><code>Yuliya, sʺeshʹ eshchё étikh myagkikh frantsuzskikh bulok iz Ĭoshkar-Olȳ, da vȳpeĭ altaĭskogo chayu</code></pre>
+<pre data-ref="target" data-schema="bs_2979_alt"><code>Yuliya, s"esh' eshche etikh myagkikh frantsuzskikh bulok iz Ioshkar-Oly, da vypei altaiskogo chayu</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.BS_2979);
+var result_alt = iuliia.translate(source, iuliia.BS_2979_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.BS_2979)
+result_alt = iuliia.translate(source, schema=iuliia.BS_2979_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat1 lat2
+а    a    a
+б    b    b
+в    v    v
+г    g    g
+д    d    d
+е    e    e
+ё    ë    e
+ж    zh   zh
+з    z    z
+и    i    i
+й    ĭ    i
+к    k    k
+л    l    l
+м    m    m
+н    n    n
+о    o    o
+п    p    p
+р    r    r
+с    s    s
+т    t    t
+у    u    u
+ф    f    f
+х    kh   kh
+ц    ts   ts
+ч    ch   ch
+ш    sh   sh
+щ    shch shch
+ъ    ʺ    &quot;
+ы    ȳ    y
+ь    ʹ    '
+э    é    e
+ю    yu   yu
+я    ya   ya
+</code></pre><p>Окончания <code>-ИЙ</code>, <code>-ЫЙ</code> могут сокращаться в <code>-Y</code>.</p>
+<p>ℹ️ <a href="https://www.lonweb.org/links/russian/lang/014.htm">lonweb.org</a></p>
+]]></content:encoded></item><item><title>ICAO DOC 9303</title><link>https://iuliia.ru/icao-doc-9303/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/icao-doc-9303/</guid><description>Схема транслитерации ICAO DOC 9303</description><content:encoded><![CDATA[<p>Стандарт Международной организации гражданской авиации. Используется МВД для ФИО в водительских удостоверениях, а МИД — в загранпаспортах. Подходит для гринкарты и вида на жительство. Используется некоторыми платёжными системами.</p>
+<p>📅 2015 • ✔️ действует • ⚪ без диакритики</p>
+<p>Особенности:</p>
+<ul>
+<li>Уродует слова с буквами <code>Ю</code> и <code>Я</code></li>
+<li><code>Й</code> переводит как <code>I</code>, а <code>Ъ</code> как <code>IE</code></li>
+<li>Без апострофов для <code>Ъ</code> и <code>Ь</code></li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия Щеглова</code></pre>
+<pre data-ref="target" data-schema="icao_doc_9303"><code>Iuliia Shcheglova</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия Щеглова";
+var result = iuliia.translate(source, iuliia.ICAO_DOC_9303);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия Щеглова"
+result = iuliia.translate(source, schema=iuliia.ICAO_DOC_9303)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    e
+ё    e
+ж    zh
+з    z
+и    i
+й    i
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts
+ч    ch
+ш    sh
+щ    shch
+ъ    ie
+ы    y
+ь    —
+э    e
+ю    iu
+я    ia
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ МИД: <a href="http://www.consultant.ru/document/cons_doc_LAW_198429/c956ff01bf42465d7052431dec215b77d0404875/">consultant.ru</a>, МВД: <a href="http://www.consultant.ru/document/cons_doc_LAW_89677/bb6520d96c564e6c780f0b58f00742041e1c44b5/">consultant.ru</a>, стандарт: <a href="https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf">icao.int</a></p>
+]]></content:encoded></item><item><title>ISO/R 9:1954</title><link>https://iuliia.ru/iso-9-1954/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1954/</guid><description>Схема транслитерации ISO/R 9:1954</description><content:encoded><![CDATA[<p>Международный стандарт 1954 года. Плоха примерно всем. Заменена на <a href="/iso-9-1968">ISO/R 9:1968</a>, затем на <a href="/gost-779">ISO 9:1995</a>.</p>
+<p>📅 1954 • 💀 не действует • ㊙️ с диакритикой</p>
+<p>Особенности:</p>
+<ul>
+<li>Диакритика для <code>Ё</code>, <code>Ж</code>, <code>Ч</code>, <code>Ш</code>, <code>Щ</code>, <code>Э</code></li>
+<li>Редкое написание <code>Э</code> как <code>Ė</code></li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="iso_9_1954"><code>Julija, s"ešʹ eščë ėtih mjagkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaju</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.ISO_9_1954);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.ISO_9_1954)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    e
+ё    ë
+ж    ž
+з    z
+и    i
+й    j
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    h
+ц    c
+ч    č
+ш    š
+щ    šč
+ъ    &quot;
+ы    y
+ь    ʹ
+э    ė
+ю    ju
+я    ja
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href="https://en.wikipedia.org/wiki/ISO_9#ISO/R_9">wikipedia.org</a></p>
+]]></content:encoded></item><item><title>ISO/R 9:1968</title><link>https://iuliia.ru/iso-9-1968/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1968/</guid><description>Схема транслитерации ISO/R 9:1968</description><content:encoded><![CDATA[<p>Международный стандарт 1968 года. Пожалуй, самая плохая из всех схем. Заменена на <a href="/gost-779">ISO 9:1995</a>.</p>
+<p>📅 1968 • 💀 не действует • ㊙️ с диакритикой</p>
+<p>Особенности:</p>
+<ul>
+<li>Сочетает в себе две разных схемы транслитерации</li>
+<li>Диакритика для <code>Ё</code>, <code>Ж</code>, <code>Ч</code>, <code>Ш</code>, <code>Щ</code>, <code>Э</code></li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="iso_9_1968"><code>Julija, sʺešʹ eščë ėtih mjagkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaju</code>
+</pre>
+<pre data-ref="target" data-schema="iso_9_1968_alt"><code>Yulyya, sʺeshʹ eshchë ėtykh myagkykh frantsuzskykh bulok yz Ĭoshkar-Oly, da vypeĭ altaĭskogo chayu</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.ISO_9_1968);
+var result_alt = iuliia.translate(source, iuliia.ISO_9_1968_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.ISO_9_1968)
+result_alt = iuliia.translate(source, schema=iuliia.ISO_9_1968_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat  alt
+а    a    a
+б    b    b
+в    v    v
+г    g    g
+д    d    d
+е    e    e
+ё    ë    ë
+ж    ž    zh
+з    z    z
+и    i    y
+й    j    ĭ
+к    k    k
+л    l    l
+м    m    m
+н    n    n
+о    o    o
+п    p    p
+р    r    r
+с    s    s
+т    t    t
+у    u    u
+ф    f    f
+х    h    kh
+ц    c    ts
+ч    č    ch
+ш    š    sh
+щ    šč   shch
+ъ    ʺ    ʺ
+ы    y    y
+ь    ʹ    ʹ
+э    ė    ė
+ю    ju   yu
+я    ja   ya
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href="https://en.wikipedia.org/wiki/ISO_9#ISO/R_9">wikipedia.org</a></p>
+]]></content:encoded></item><item><title>UNGEGN 1987 V/18</title><link>https://iuliia.ru/ungegn-1987/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/ungegn-1987/</guid><description>Схема транслитерации UNGEGN 1987 V/18</description><content:encoded><![CDATA[<p>Схема транслитерации ООН для географических названий. Основана на <a href="/gost-16876">ГОСТ 16876-71</a>. Такая же страшная, но до сих пор не отменена.</p>
+<p>📅 1987 • ✔️ действует • ㊙️ с диакритикой</p>
+<p>Особенности:</p>
+<ul>
+<li>В точности соответствует диакритической схеме <a href="/gost-16876">ГОСТ 16876-71</a>, только без альтернатив для <code>Х</code>, <code>Щ</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Обратимая (cyr ↔ lat)</li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Россия, город Йошкар-Ола, улица Яна Крастыня</code></pre>
+<pre data-ref="target" data-schema="ungegn_1987"><code>Rossija, gorod Joškar-Ola, ulica Jana Krastynja</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Россия, город Йошкар-Ола, улица Яна Крастыня";
+var result = iuliia.translate(source, iuliia.UNGEGN_1987);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
+result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>а    a
+б    b
+в    v
+г    g
+д    d
+е    e
+ё    ë
+ж    ž
+з    z
+и    i
+й    j
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    h
+ц    c
+ч    č
+ш    š
+щ    šč
+ъ    ʺ
+ы    y
+ь    ʹ
+э    è
+ю    ju
+я    ja
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href="https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf">un.org</a>, <a href="https://www.eki.ee/wgrs/rom1_ru.htm">eki.ee</a></p>
+]]></content:encoded></item><item><title>Википедия</title><link>https://iuliia.ru/wikipedia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/wikipedia/</guid><description>Схема транслитерации Википедии</description><content:encoded><![CDATA[<p>Схема транслитерации, которую использует Википедия. Сделана на основе <a href="/bgn-pcdn">BGN/PCGN</a>со значительными модификациями. Самая продуманная, звучит лучше всех и выглядит приятнее большинства прочих схем. Пожалуй, неудачной вышла только буква <code>Щ</code>.</p>
+<p>📅 2005 • ✔️ действует • ⚪ без диакритики</p>
+<p>Особенности:</p>
+<ul>
+<li>Нечастое написание <code>Ё</code> как <code>YO</code></li>
+<li>Редчайшее написание <code>Ъ</code>, <code>Ы</code>, <code>Ь</code> как <code>Y</code></li>
+<li>Множество нюансов, самые сложные правила</li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="wikipedia"><code>Yuliya, syesh yeshchyo etikh myagkikh frantsuzskikh bulok iz Yoshkar-Oly, da vypey altayskogo chayu</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.WIKIPEDIA);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.WIKIPEDIA)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat
+а    a
+б    b
+в    v
+г    g
+д    d
+е    ye,e
+ё    yo
+ж    zh
+з    z
+и    i
+й    y
+к    k
+л    l
+м    m
+н    n
+о    o
+п    p
+р    r
+с    s
+т    t
+у    u
+ф    f
+х    kh
+ц    ts
+ч    ch
+ш    sh
+щ    shch
+ъ    y
+ы    y
+ь    y
+э    e
+ю    yu
+я    ya
+</code></pre><p>Буква <code>Е</code> →</p>
+<ul>
+<li><code>YE</code> в начале слова (Ельцин → Yeltsin);</li>
+<li><code>YE</code> после гласных, <code>Ь</code>, <code>Ъ</code> (Раздольное → Razdolnoye, Юрьев → Yuryev);</li>
+<li><code>E</code> в остальных случаях (Белкин → Belkin).</li>
+</ul>
+<p>Буква <code>И</code> → <code>I</code>, кроме окончаний на <code>-ИЙ</code></p>
+<p>Буква <code>Й</code> → <code>Y</code>, кроме окончаний на <code>-ИЙ</code> и <code>-ЫЙ</code> (Бийск → Biysk)</p>
+<p>Буква <code>Ъ</code> →</p>
+<ul>
+<li>опускается перед <code>Е</code>, <code>Ё</code>, <code>Ю</code>, <code>Я</code> (Подъярский → Podyarsky);</li>
+<li><code>Y</code> перед <code>А</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Ы</code>, <code>Э</code> (Мусийкъонгийкоте → Musiykyongiykote).</li>
+</ul>
+<p>Буква <code>Ы</code> → <code>Y</code>, кроме окончаний на <code>-ЫЙ</code> (Давыдов → Davydov)</p>
+<p>Буква <code>Ь</code> →</p>
+<ul>
+<li>опускается перед <code>Е</code>, <code>Ё</code>, <code>Ю</code>, <code>Я</code> (Усолье → Usolye);</li>
+<li>опускается в конце слова (Выхухоль → Vykhukhol);</li>
+<li>опускается перед согласной (Дальнегорск → Dalnegorsk);</li>
+<li><code>Y</code> перед <code>А</code>, <code>И</code>, <code>О</code>, <code>У</code>, <code>Ы</code>, <code>Э</code> (Ильинский → Ilyinsky).</li>
+</ul>
+<p>Окончания:</p>
+<ul>
+<li><code>-ЫЙ</code> → <code>-Y</code> (Красный → Krasny)</li>
+<li><code>-ИЙ</code> → <code>-Y</code> в именах и русских прилагательных (Великий → Veliky)</li>
+<li><code>-ИЙ</code> → <code>IY</code> в существительных и нерусских названиях (Рыркайпий → Ryrkaypiy)</li>
+<li><code>-ЫЕ</code> → <code>YE</code> (Набережные Челны → Naberezhnye Chelny)</li>
+</ul>
+<p>ℹ️ <a href="https://en.wikipedia.org/wiki/Wikipedia:Romanization_of_Russian">wikipedia.org</a></p>
+]]></content:encoded></item><item><title>ГОСТ 16876-71</title><link>https://iuliia.ru/gost-16876/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-16876/</guid><description>Схема транслитерации ГОСТ 16876-71</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, стандарт 1971 года. Также известна как СТ СЭВ 1362-78, а в англоязычной литературе — GOST 1983. Старая и страшная. Заменена на <a href="/gost-779">ГОСТ 7.79-2000</a></p>
+<p>📅 1971 / 1978 / 1983 • 💀 не действует • ㊙️ ⚪ с диакритикой и без</p>
+<p>Особенности:</p>
+<ul>
+<li>Диакритика для букв <code>Ё</code>, <code>Ж</code>, <code>Ц</code>, <code>Ч</code>, <code>Ш</code>, <code>Щ</code>, <code>Э</code></li>
+<li>В варианте с диакритикой есть альтернативы для <code>Х</code>, <code>Щ</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Обратимая (cyr ↔ lat)</li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="gost_16876"><code>Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû</code></pre>
+<pre data-ref="target" data-schema="gost_16876_alt"><code>Julija, s"esh' eshhjo ehtikh mjagkikh francuzskikh bulok iz Jjoshkar-Oly, da vypejj altajjskogo chaju</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.GOST_16876);
+var result_alt = iuliia.translate(source, iuliia.GOST_16876_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.GOST_16876)
+result_alt = iuliia.translate(source, schema=iuliia.GOST_16876_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat1       lat2
+а    a          a
+б    b          b
+в    v          v
+г    g          g
+д    d          d
+е    e          e
+ё    ё          jo
+ж    ž          zh
+з    z          z
+и    i          i
+й    j          jj
+к    k          k
+л    l          l
+м    m          m
+н    n          n
+о    o          o
+п    p          p
+р    r          r
+с    s          s
+т    t          t
+у    u          u
+ф    f          f
+х    h (ch)     kh
+ц    c          c
+ч    č          ch
+ш    š          sh
+щ    ŝ (šč)     shh
+ъ    ʺ          &quot;
+ы    y          y
+ь    ʹ          '
+э    è          eh
+ю    û (ju)     ju
+я    â (ja)     ja
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href="https://nevacert.ru/files/gost/gost_16876-1971.pdf">nevacert.ru</a></p>
+]]></content:encoded></item><item><title>ГОСТ 7.79-2000</title><link>https://iuliia.ru/gost-779/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-779/</guid><description>Схема транслитерации ГОСТ 7.79-2000</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, международный стандарт <code>ISO 9:1995</code>. Громоздкая, зато обратимая. Есть вариант с диакритикой.</p>
+<p>📅 1995 en / 2000 ru • ✔️ действует • ㊙️ ⚪ с диакритикой и без</p>
+<p>Особенности:</p>
+<ul>
+<li>В варианте с диакритикой есть альтернативы для <code>Х</code>, <code>Щ</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Обратимая (cyr ↔ lat)</li>
+</ul>
+<div class="tabs">
+<input name="tabs" type="radio" id="text" checked="checked" class="input"/>
+<label for="text" class="label"><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref="source" contenteditable="true" class="editable"><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref="target" data-schema="gost_779"><code>Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû</code></pre>
+<pre data-ref="target" data-schema="gost_779_alt"><code>Yuliya, s&#96;&#96;esh&#96; eshhyo е&#96;tix myagkix franczuzskix bulok iz Joshkar-Oly&#96;, da vy&#96;pej altajskogo chayu</code></pre>
+</div>
+<input name="tabs" type="radio" id="js" class="input"/>
+<label for="js" class="label"><span>JavaScript</span></label>
+<pre class="panel"><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.GOST_779);
+var result_alt = iuliia.translate(source, iuliia.GOST_779_ALT);</code></pre>
+<input name="tabs" type="radio" id="python" class="input"/>
+<label for="python" class="label"><span>Python</span></label>
+<pre class="panel"><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.GOST_779)
+result_alt = iuliia.translate(source, schema=iuliia.GOST_779_ALT)</code></pre>
+</div>
+<h2 id="правила">Правила</h2>
+<pre tabindex="0"><code>cyr  lat1 lat2
+а    a    a
+б    b    b
+в    v    v
+г    g    g
+д    d    d
+е    e    e
+ё    ё    yо
+ж    ž    zh
+з    z    z
+и    i    i
+й    j    j
+к    k    k
+л    l    l
+м    m    m
+н    n    n
+о    o    o
+п    p    p
+р    r    r
+с    s    s
+т    t    t
+у    u    u
+ф    f    f
+х    h    x
+ц    c    cz,c
+ч    č    ch
+ш    š    sh
+щ    ŝ    shh
+ъ    ʺ    ``
+ы    y    y`
+ь    ʹ    `
+э    è    е`
+ю    û    yu
+я    â    ya
+</code></pre><p><strong>lat2</strong></p>
+<p>Буква <code>Ц</code> →</p>
+<ul>
+<li><code>С</code> перед буквами <code>Е</code>, <code>И</code>, <code>Й</code>, <code>Ы</code>;</li>
+<li><code>CZ</code> в остальных случаях.</li>
+</ul>
+<p>ℹ️ <a href="http://docs.cntd.ru/document/1200026226">cntd.ru</a></p>
+]]></content:encoded></item></channel></rss>

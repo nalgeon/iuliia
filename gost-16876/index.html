@@ -1,0 +1,145 @@
+<!doctype html><html lang=en>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>ГОСТ 16876-71</title>
+<meta name=description content="Схема транслитерации ГОСТ 16876-71">
+<meta name=robots content="index, follow">
+<link rel=stylesheet type=text/css href=/assets/css/style.899a77700a13bea9d72dc8abff528dd1d3c1c0b622fd342afe7df197f0dd3c5a.css>
+<link rel=icon href=/assets/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/assets/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=/assets/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=/assets/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=/assets/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#fff">
+<meta name=msapplication-TileColor content="#fff">
+<link rel=canonical href=https://iuliia.ru/gost-16876/>
+<meta name=author content="Антон Жиянов">
+<meta property="og:site_name" content="Юлия → Iuliia">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ГОСТ 16876-71">
+<meta property="og:description" content="Схема транслитерации ГОСТ 16876-71">
+<meta property="og:url" content="https://iuliia.ru/gost-16876/">
+<meta property="og:image" content="https://iuliia.ru/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:title content="ГОСТ 16876-71">
+<meta name=twitter:description content="Схема транслитерации ГОСТ 16876-71">
+<meta name=twitter:url content="https://iuliia.ru/gost-16876/">
+<meta name=twitter:site content="@nalgeon">
+<meta name=twitter:image content="https://iuliia.ru/"></head>
+<body>
+<div class=header>
+<div class=container>
+<div class=row>
+<div class="col-xs-6 col-sm-3">
+<a href=/>
+<strong>Юлия → Iuliia</strong>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class=storey>
+<div class=container>
+<article class=post>
+<div class=row>
+<div class="col-xs-12 col-sm-10 article">
+<header>
+<h1>ГОСТ 16876-71</h1>
+</header>
+<p>Универсальная схема транслитерации, стандарт 1971 года. Также известна как СТ СЭВ 1362-78, а в англоязычной литературе — GOST 1983. Старая и страшная. Заменена на <a href=/gost-779>ГОСТ 7.79-2000</a></p>
+<p>📅 1971 / 1978 / 1983 • 💀 не действует • ㊙️ ⚪ с диакритикой и без</p>
+<p>Особенности:</p>
+<ul>
+<li>Диакритика для букв <code>Ё</code>, <code>Ж</code>, <code>Ц</code>, <code>Ч</code>, <code>Ш</code>, <code>Щ</code>, <code>Э</code></li>
+<li>В варианте с диакритикой есть альтернативы для <code>Х</code>, <code>Щ</code>, <code>Ю</code>, <code>Я</code></li>
+<li>Обратимая (cyr ↔ lat)</li>
+</ul>
+<div class=tabs>
+<input name=tabs type=radio id=text checked class=input>
+<label for=text class=label><span>Текст</span></label>
+<div class="panel pre-group">
+<pre data-ref=source contenteditable=true class=editable><code>Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю</code></pre>
+<pre data-ref=target data-schema=gost_16876><code>Ûliâ, sʺešʹ eŝё ètih mâgkih francuzskih bulok iz Joškar-Oly, da vypej altajskogo čaû</code></pre>
+<pre data-ref=target data-schema=gost_16876_alt><code>Julija, s"esh' eshhjo ehtikh mjagkikh francuzskikh bulok iz Jjoshkar-Oly, da vypejj altajjskogo chaju</code></pre>
+</div>
+<input name=tabs type=radio id=js class=input>
+<label for=js class=label><span>JavaScript</span></label>
+<pre class=panel><code>var source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю";
+var result = iuliia.translate(source, iuliia.GOST_16876);
+var result_alt = iuliia.translate(source, iuliia.GOST_16876_ALT);</code></pre>
+<input name=tabs type=radio id=python class=input>
+<label for=python class=label><span>Python</span></label>
+<pre class=panel><code>import iuliia
+source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
+result = iuliia.translate(source, schema=iuliia.GOST_16876)
+result_alt = iuliia.translate(source, schema=iuliia.GOST_16876_ALT)</code></pre>
+</div>
+<h2 id=правила>Правила</h2>
+<pre tabindex=0><code>cyr  lat1       lat2
+а    a          a
+б    b          b
+в    v          v
+г    g          g
+д    d          d
+е    e          e
+ё    ё          jo
+ж    ž          zh
+з    z          z
+и    i          i
+й    j          jj
+к    k          k
+л    l          l
+м    m          m
+н    n          n
+о    o          o
+п    p          p
+р    r          r
+с    s          s
+т    t          t
+у    u          u
+ф    f          f
+х    h (ch)     kh
+ц    c          c
+ч    č          ch
+ш    š          sh
+щ    ŝ (šč)     shh
+ъ    ʺ          &quot;
+ы    y          y
+ь    ʹ          '
+э    è          eh
+ю    û (ju)     ju
+я    â (ja)     ja
+</code></pre><p>Особых правил нет.</p>
+<p>ℹ️ <a href=https://nevacert.ru/files/gost/gost_16876-1971.pdf>nevacert.ru</a></p>
+</div>
+</div><footer class=post__footer>
+<div class=row>
+<div class=col-xs-12>
+</div>
+</div>
+</footer></article>
+<aside class=post__related>
+<div class="post__nav article">
+<div class=row>
+<div class="col-xs-12 col-sm-6">
+<p>&larr;&nbsp;<a href=https://iuliia.ru/gost-779/>ГОСТ 7.79-2000</a></p>
+</div>
+<div class="col-xs-12 col-sm-6">
+<p><a href=https://iuliia.ru/wikipedia/>Википедия</a>&nbsp;&rarr;</p>
+</div>
+</div>
+</div></aside>
+</div>
+</div>
+<footer class="container footer">
+<ul class=naked-list>
+<li class=footer__item>
+<a href=https://antonz.ru/>Антон Жиянов</a>
+<a href=https://twitter.com/nalgeon class=footer__social-link><i class="fab fa-twitter"></i><span>Twitter</span></a>
+</li>
+</ul>
+</footer>
+<script defer src=https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js></script>
+<script src=https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js></script>
+<script defer src=/assets/js/site.min.78e24a268bf34b3050f5ca573a10da85c1121d3e2950da2a37a0cd28f9059aba.js></script></body>
+</html>
