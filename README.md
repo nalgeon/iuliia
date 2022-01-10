@@ -40,7 +40,7 @@ And deprecated ones:
 -   MVD 310-1997: [mvd_310.json](mvd_310.json) and [mvd_310_fr.json](mvd_310_fr.json)
 -   MVD 782-2000: [mvd_782.json](mvd_782.json)
 
-For schema details and other information, see <https://dangry.ru/iuliia> (in Russian).
+For schema details and other information, see [iuliia.ru](https://iuliia.ru/) (in Russian).
 
 ## Supported languages
 

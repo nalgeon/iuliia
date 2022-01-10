@@ -1,7 +1,7 @@
 {
     "name": "mosmetro",
     "description": "Moscow Metro map transliteration schema",
-    "url": "https://dangry.ru/iuliia/mosmetro/",
+    "url": "https://iuliia.ru/mosmetro/",
     "mapping": {
         "а": "a",
         "б": "b",
