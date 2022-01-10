@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="storey">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10">
+                <div class="article">
+                    <header>
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ .Content }}
+                </div>
+
+                <div class="posts">
+                    {{- range .Pages.ByDate.Reverse }}
+                    <div class='post-stub {{if .Param "featured" }}post-stub--featured{{ end }}'>
+                        <h3 class="post-stub__header">
+                            {{- if .Param "featured"}}
+                            <i class="far fa-star post-stub__star"></i>
+                            {{- end}}
+                            <a class="post-stub__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            {{- range (.GetTerms "tags") | first 1 }}
+                            <span class="post-stub__date nowrap">{{ .LinkTitle }}</span>
+                            {{- end }}
+                        </h3>
+                    </div>
+                    {{- end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

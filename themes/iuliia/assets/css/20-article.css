@@ -1,0 +1,145 @@
+.article {
+    font-size: 1.1rem;
+}
+@media only screen and (min-width: 48em) {
+    .article {
+        font-size: var(--font-size-large);
+    }
+}
+@media only screen and (min-width: 62em) {
+    .article {
+        font-size: 1.35rem;
+    }
+    pre {
+        font-size: var(--font-size-large);
+    }
+}
+
+.article h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0 0 0.5em;
+}
+
+.article h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 1em 0 0.5em;
+}
+.article h2:first-child {
+    margin-top: 0;
+}
+
+.article h3 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 1em 0 0.5em;
+}
+.article h3:first-child {
+    margin-top: 0;
+}
+
+.article ul,
+.article ol {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin: 0 0 0.8em 0;
+}
+
+.article ul li {
+    list-style: none;
+}
+.article ol li {
+    list-style: decimal outside;
+}
+.article li {
+    margin: 0 0 0.4em 0;
+}
+
+.article figure {
+    margin: 0 0 0.8em 0;
+}
+.article figcaption,
+.article .figcaption {
+    color: var(--color-gray);
+    font-size: 90%;
+    margin-top: 0.2em;
+}
+.article figcaption a,
+.article .figcaption a {
+    color: var(--color-gray);
+    border-color: var(--color-gray);
+}
+
+.article blockquote {
+    border-left: 0.3em solid #eaeaea;
+    color: var(--color-gray);
+    margin-left: 1em;
+    margin-bottom: 0.8em;
+    padding: 0 0 0 1em;
+}
+@media only screen and (min-width: 48em) {
+    .article blockquote {
+        margin-left: 2em;
+    }
+}
+
+.article .big {
+    font-size: 1.5em;
+    margin: 0 0 0.8em 0;
+}
+.article blockquote.big {
+    border: none;
+    color: var(--color-gray);
+    font-family: var(--font-serif);
+    font-style: italic;
+    margin-left: 0;
+    padding: 0 1.5em;
+}
+@media only screen and (min-width: 48em) {
+    .article blockquote.big {
+        padding: 0 3em;
+    }
+}
+
+.article .boxed {
+    margin-bottom: 0.8em;
+    border: 0.25em solid #eaeaea;
+    padding: 1.5em;
+    font-size: 90%;
+}
+.article .boxed > p:last-child {
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 48em) {
+    .article .boxed {
+        padding: 2em;
+    }
+}
+
+.article table {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 0 0.8em 0;
+    overflow-x: auto;
+    vertical-align: top;
+    border: 1px solid #eaeaea;
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+.article table td,
+.article table th {
+    padding: 0.4em 0.4em;
+    vertical-align: top;
+    font-size: 90%;
+    border-bottom: 1px solid #eaeaea;
+}
+.article table tr:last-child td {
+    border-bottom: none;
+}
+
+.highlight pre {
+    background: #f5f5f5 !important;
+}

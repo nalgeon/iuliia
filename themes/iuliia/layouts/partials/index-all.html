@@ -1,0 +1,198 @@
+<div id="all" class="storey storey--notop">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 home__block">
+                <h2 class="storey__header">Все схемы</h2>
+                <p>Классификация</p>
+                <ul id="filter">
+                    <li>по назначению: <a href="#name" data-filter="purpose" data-value="name"
+                            class="filter filter--active">👩 ФИО</a><a href="#address" data-filter="purpose"
+                            data-value="address" class="filter filter--active">🏠 адреса</a><a href="#general"
+                            data-filter="purpose" data-value="general"
+                            class="filter filter--active">📚 универсальные</a></li>
+                    <li>по формату: <a href="#dia-yes" data-filter="dia" data-value="yes"
+                            class="filter filter--active">㊙️ с диакритикой (ё, č, š)</a><a href="#dia-no"
+                            data-filter="dia" data-value="no" class="filter filter--active">⚪ без неё</a>
+                    </li>
+                    <li>по стране: <a href="#ru" data-filter="country" data-value="ru"
+                            class="filter filter--active">🇷🇺 российские</a><a href="#en" data-filter="country"
+                            data-value="en" class="filter filter--active">🇺🇸 англо-американские</a><a href="#un"
+                            data-filter="country" data-value="un" class="filter filter--active">🇺🇳 международные</a>
+                    </li>
+                    <li>по статусу: <a href="#actual" data-filter="state" data-value="actual"
+                            class="filter filter--active">✔️ действующие</a><a href="#deprecated" data-filter="state"
+                            data-value="deprecated" class="filter filter--active">💀 устаревшие</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="all-list" class="row">
+            <div id="gost-16876" data-purpose="general" data-dia="yes" data-country="ru" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚㊙️💀 <a href="/gost-16876">ГОСТ 16876-71</a></p>
+                    <p>Также известна как <span class="nowrap">СТ СЭВ 1362-78</span> и <span class="nowrap">GOST
+                            1983</span>. Старая и страшная. Заменена на <a href="/gost-779" class="nowrap">ГОСТ
+                            7.79-2000</a></p>
+                </div>
+            </div>
+            <div id="gost-779" data-purpose="general" data-dia="yes,no" data-country="ru,un" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/gost-779">ГОСТ 7.79-2000</a></p>
+                    <p>Международный стандарт <span class="nowrap">ISO 9:1995</span>. Громоздкая,
+                        зато обратимая.
+                        Есть вариант с диакритикой.</p>
+                </div>
+            </div>
+            <div id="gost-52290" data-purpose="address" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">🏠⚪✔️<a href="/gost-52290">ГОСТ Р 52290-2004</a></p>
+                    <p>Стандарт для дорожных знаков. Неплохая, с одинарными апострофами. Три варианта
+                        написания Ё.
+                    </p>
+                </div>
+            </div>
+            <div id="gost-52535" data-purpose="name" data-dia="no" data-country="ru" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">👩⚪💀 <a href="/gost-52535">ГОСТ Р 52535.1-2006</a></p>
+                    <p>В 2000-х использовалась ФМС для загранпаспортов. Весьма уродливая. Заменена на <a
+                            href="/icao-doc-9303" class="nowrap">ICAO DOC 9303</a></p>
+                </div>
+            </div>
+            <div id="gost-7034" data-purpose="general" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/gost-7034">ГОСТ Р 7.0.34-2014</a></p>
+                    <p>Для библиотек и издательств. В меру приятная. Расслабленная: есть альтернативы для
+                        многих
+                        букв, можно без апострофов.</p>
+                </div>
+            </div>
+            <div id="mvd-310" data-purpose="name" data-dia="no" data-country="ru" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">👩⚪💀 <a href="/mvd-310">МВД 310-1997</a></p>
+                    <p>В 1990-х и 2000-х использовалась для загранпаспортов. Плохо формализована. Есть
+                        «французский»
+                        вариант без апострофов. Заменена на <a href="/icao-doc-9303" class="nowrap">ICAO
+                            DOC
+                            9303</a></p>
+                </div>
+            </div>
+            <div id="mvd-782" data-purpose="name" data-dia="no" data-country="ru" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">👩⚪💀 <a href="/mvd-782">МВД 782-2000</a></p>
+                    <p>В 2000-х использовалась для водительских удостоверений. Неплохая, с одинарными
+                        апострофами.
+                        Заменена на <a href="/icao-doc-9303" class="nowrap">ICAO DOC 9303</a></p>
+                </div>
+            </div>
+            <div id="telegram" data-purpose="general" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/telegram">Телеграммы</a></p>
+                    <p>Правила Минсвязи для международных телеграмм. Некрасивая, зато без апострофов.</p>
+                </div>
+            </div>
+            <div id="iso-9-1954" data-purpose="general" data-dia="yes" data-country="un" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚㊙️💀 <a href="/iso-9-1954">ISO/R 9:1954</a></p>
+                    <p>Древний международный стандарт. Отвратительная. Заменена на <a href="/iso-9-1968"
+                            class="nowrap">ISO/R 9:1968</a>, затем на <a href="/gost-779" class="nowrap">ISO
+                            9:1995</a></p>
+                </div>
+            </div>
+            <div id="iso-9-1968" data-purpose="general" data-dia="yes" data-country="un" data-state="deprecated"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚㊙️💀 <a href="/iso-9-1968">ISO/R 9:1968</a></p>
+                    <p>Древний международный стандарт. Максимально отвратительная. Заменена на <a href="/gost-779"
+                            class="nowrap">ISO 9:1995</a></p>
+                </div>
+            </div>
+            <div id="icao-doc-9303" data-purpose="name" data-dia="no" data-country="un" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">👩⚪✔️ <a href="/icao-doc-9303">ICAO DOC 9303</a></p>
+                    <p>Международный авиационный стандарт для ФИО. Используется для загранпаспортов и в/у.
+                        Уродует
+                        Ю и Я.</p>
+                </div>
+            </div>
+            <div id="ungegn-1987" data-purpose="address" data-dia="yes" data-country="un" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">🏠㊙️✔️ <a href="/ungegn-1987">UNGEGN 1987 V/18</a></p>
+                    <p>Стандарт ООН. Основана на <a href="/gost-16876" class="nowrap">ГОСТ 16876-71</a>.
+                        Такая же страшная, но до сих пор не отменена.</p>
+                </div>
+            </div>
+            <div id="bgn-pcgn" data-purpose="address" data-dia="yes" data-country="en" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">🏠㊙️✔️ <a href="/bgn-pcgn">BGN/PCGN</a></p>
+                    <p>Древнейший стандарт ООН. В целом адекватная, но зачем-то оставила Ё с точками.</p>
+                </div>
+            </div>
+            <div id="ala-lc" data-purpose="general" data-dia="yes,no" data-country="en" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/ala-lc">ALA-LC</a></p>
+                    <p>Используется американской Библиотекой Конгресса. Страшноватая. Есть вариант
+                        с диакритикой.</p>
+                </div>
+            </div>
+            <div id="bs-2979" data-purpose="general" data-dia="yes,no" data-country="en" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/bs-2979">BS 2979:1958</a></p>
+                    <p>Используется издательством Oxford University Press. Изящно схлопывает окончания
+                        ИЙ и ЫЙ. Есть
+                        вариант с диакритикой.</p>
+                </div>
+            </div>
+            <div id="scientific" data-purpose="general" data-dia="yes" data-country="un" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚㊙️✔️ <a href="/scientific">Научная</a></p>
+                    <p>Используется в научных работах. Из неё вырос <a href="/gost-779" class="nowrap">ГОСТ
+                            16876-71</a>. Старая и страшная.</p>
+                </div>
+            </div>
+            <div id="wikipedia" data-purpose="general" data-dia="no" data-country="un" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/wikipedia">Википедия</a></p>
+                    <p>Продуманная, отлично звучит и неплохо выглядит. Неудачная Щ и спорная Ё.</p>
+                </div>
+            </div>
+            <div id="mosmetro" data-purpose="general" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">📚⚪✔️ <a href="/mosmetro">Мосметро</a></p>
+                    <p>Самая приятная визуально, хотя уступает <a href="/wikipedia">Википедии</a>
+                        по фонетике.</p>
+                </div>
+            </div>
+            <div id="yandex-money" data-purpose="name" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">👩⚪✔️ <a href="/yandex-money">Яндекс.Деньги</a></p>
+                    <p>Правила Яндекса для банковских карт. Простая и удобная.</p>
+                </div>
+            </div>
+            <div id="yandex-maps" data-purpose="address" data-dia="no" data-country="ru" data-state="actual"
+                class="col-xs-12 col-sm-4 flex">
+                <div class="content tile tile--small tile--gray">
+                    <p class="tile__header">🏠⚪✔️ <a href="/yandex-maps">Яндекс.Карты</a></p>
+                    <p>Правила Яндекса для адресов. Слегка улучшенная версия <a href="/yandex-money">Яндекс-денег</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

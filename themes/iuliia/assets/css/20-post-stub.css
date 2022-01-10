@@ -1,0 +1,32 @@
+.post-stub {
+    margin-bottom: 1.5em;
+}
+
+.post-stub__header {
+    position: relative;
+    margin: 0;
+}
+
+.post-stub__star {
+    color: var(--color-yellow);
+    display: inline-block;
+    width: 1.2em;
+}
+
+.post-stub__date {
+    color: var(--color-gray);
+    padding-left: 0.5rem;
+    font-size: 0.8em;
+}
+
+.post-stub__description {
+    margin: 0.2em 0 0 0;
+}
+
+@media only screen and (min-width: 48em) {
+    .post-stub__star {
+        position: absolute;
+        left: -1.3em;
+        top: 0.2em;
+    }
+}

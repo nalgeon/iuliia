@@ -1,0 +1,20 @@
+baseURL = "https://iuliia.ru/"
+languageCode = "ru-ru"
+title = "Юлия → Iuliia"
+theme = "iuliia"
+
+enableRobotsTXT = true
+rssLimit = 10
+
+[permalinks]
+posts = "/:slug"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "xcode"
+
+[params]
+author = "Антон Жиянов"
+description = "Транслитерация без головной боли."

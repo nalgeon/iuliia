@@ -1,0 +1,5 @@
+{{- $script := (resources.Match "js/*.js") | resources.Concat "assets/js/site.js" }}
+{{- $script := $script | minify | fingerprint }}
+<script defer src="https://unpkg.com/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://unpkg.com/iuliia@latest/dist/umd/iuliia.min.js"></script>
+<script defer src="{{ $script.RelPermalink }}"></script>

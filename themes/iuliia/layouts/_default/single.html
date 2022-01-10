@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="storey">
+    <div class="container">
+        <article class="post">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 article">
+                    <header>
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ .Content }}
+                </div>
+            </div>
+            {{- partial "post-footer.html" . -}}
+        </article>
+
+        <aside class="post__related">
+            {{- partial "post-nav.html" . -}}
+        </aside>
+    </div>
+</div>
+{{ end }}

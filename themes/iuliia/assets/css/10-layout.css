@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.storey {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.storey--notop {
+    padding-top: 0;
+}
+.storey__header {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 0.75em 0;
+}
+
+.flex {
+    display: flex;
+}

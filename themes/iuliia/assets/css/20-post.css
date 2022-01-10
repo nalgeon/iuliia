@@ -1,0 +1,28 @@
+.post__date {
+    color: var(--color-gray);
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.post__footer {
+    margin-top: 1em;
+}
+
+.post__related {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.post__nav p {
+    margin-bottom: 0.8em;
+}
+
+.post__tags {
+    color: var(--color-gray);
+    display: inline-block;
+}
+
+.post__tags a {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    color: currentColor;
+}

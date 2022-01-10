@@ -1,0 +1,29 @@
+.menu__link {
+    border: none !important;
+    display: inline-block;
+    margin-right: 1em;
+}
+.menu__link:last-child {
+    margin-right: 0;
+}
+.menu__link i {
+    color: #333;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.menu__link span {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.menu__link span,
+.menu__link:visited span {
+    color: var(--color-blue);
+    border-bottom: 1px solid rgba(0, 139, 245, 0.2);
+}
+.menu__link:active span,
+.menu__link:hover span {
+    color: #5cb8ff;
+    border-bottom-color: rgba(92, 184, 255, 0.2);
+}
+.menu__link:active i,
+.menu__link:hover i {
+    color: #5cb8ff;
+}

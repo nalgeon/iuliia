@@ -1,0 +1,109 @@
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+    font-family: "Font Awesome Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fa-brands-400.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../fonts/fa-solid-900.woff2") format("woff2");
+}
+
+.fa,
+.fab,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fab {
+    font-family: "Font Awesome Brands";
+    font-weight: 400;
+}
+
+.far {
+    font-family: "Font Awesome";
+    font-weight: 400;
+}
+
+.fas {
+    font-family: "Font Awesome";
+    font-weight: 900;
+}
+
+/* Only selected icons from the set */
+.fa-arrow-alt-circle-down::before {
+    content: "\f358";
+}
+.fa-book::before {
+    content: "\f02d";
+}
+.fa-chalkboard-teacher::before {
+    content: "\f51c";
+}
+.fa-cloud::before {
+    content: "\f0c2";
+}
+.fa-code::before {
+    content: "\f121";
+}
+.fa-database::before {
+    content: "\f1c0";
+}
+.fa-dot-circle::before {
+    content: "\f192";
+}
+.fa-facebook::before {
+    content: "\f09a";
+}
+.fa-facebook-f::before {
+    content: "\f39e";
+}
+.fa-file::before {
+    content: "\f15b";
+}
+.fa-kiwi-bird::before {
+    content: "\f535";
+}
+.fa-microphone::before {
+    content: "\f130";
+}
+.fa-rss::before {
+    content: "\f09e";
+}
+.fa-star::before {
+    content: "\f005";
+}
+.fa-telegram-plane::before {
+    content: "\f3fe";
+}
+.fa-twitter::before {
+    content: "\f099";
+}
+.fa-user::before {
+    content: "\f007";
+}

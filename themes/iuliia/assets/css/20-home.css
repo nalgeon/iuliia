@@ -1,0 +1,10 @@
+.home {
+    background: linear-gradient(#fff, #f7f8fc);
+}
+.home__block {
+    font-size: var(--font-size-large);
+}
+
+.home__row > div {
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,40 @@
+.footer {
+    color: var(--color-gray);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.footer__item {
+    margin-left: 2em;
+}
+
+.footer__link {
+    border-bottom-color: rgba(153, 153, 153, 0.4);
+    color: inherit;
+    text-decoration: none;
+}
+.footer__link:visited {
+    border-bottom-color: rgba(153, 153, 153, 0.4);
+    color: inherit;
+}
+
+.footer__social-link {
+    border: none !important;
+    color: #2196f3;
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    width: 2em;
+}
+.footer__social-link:visited {
+    color: #2196f3;
+}
+.footer__social-link:hover,
+.footer__social-link:visited:hover {
+    color: #5cb8ff;
+}
+.footer__social-link span {
+    display: none;
+}
