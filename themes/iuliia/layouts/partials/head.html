@@ -6,10 +6,6 @@
 {{- $ogtype := "article" }}
 {{- $twtype := "summary_large_image" }}
 {{- $description := .Description }}
-{{- if .IsHome }}
-{{- $ogtype = "website" }}
-{{- $twtype = "summary" }}
-{{- end }}
 
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description }}" />
@@ -44,13 +40,13 @@
 <meta name="author" content="{{ $author }}">
 
 <meta property="og:site_name" content="{{ .Site.Title }}" />
-<meta property="og:type" content="{{ $ogtype }}" />
+<meta property="og:type" content="article" />
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $description }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:image" content='{{ $.Param "image" | absURL }}' />
 
-<meta name="twitter:card" content="{{ $twtype }}" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ $title }}" />
 <meta name="twitter:description" content="{{ $description }}" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
