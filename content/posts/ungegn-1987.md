@@ -33,7 +33,7 @@ source = "Россия, город Йошкар-Ола, улица Яна Кра
 result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/ungegn_1987.json)
 
 ```
 а    a
@@ -73,4 +73,4 @@ result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
 
 Особых правил нет.
 
-ℹ️ [un.org](https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf), [eki.ee](https://www.eki.ee/wgrs/rom1_ru.htm)
+ℹ️ [un.org](https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf) • [eki.ee](https://www.eki.ee/wgrs/rom1_ru.htm)

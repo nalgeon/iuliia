@@ -38,7 +38,7 @@ result = iuliia.translate(source, schema=iuliia.ALA_LC)
 result_alt = iuliia.translate(source, schema=iuliia.ALA_LC_ALT)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/ala_lc.json)
 
 ```
 cyr  lat1 lat2
@@ -79,4 +79,4 @@ cyr  lat1 lat2
 
 Особых правил нет.
 
-ℹ️ [loc.gov](https://www.loc.gov/catdir/cpso/romanization/russian.pdf), [wikipedia.org](https://en.wikipedia.org/wiki/ALA-LC_romanization_for_Russian)
+ℹ️ [loc.gov](https://www.loc.gov/catdir/cpso/romanization/russian.pdf) • [wikipedia.org](https://en.wikipedia.org/wiki/ALA-LC_romanization_for_Russian)

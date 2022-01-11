@@ -34,7 +34,7 @@ source = "Россия, город Йошкар-Ола, улица Яна Кра
 result = iuliia.translate(source, schema=iuliia.YANDEX_MAPS)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/yandex_maps.json)
 
 ```
 cyr  lat

@@ -75,4 +75,4 @@ cyr  lat
 
 Особых правил нет.
 
-ℹ️ МИД: [consultant.ru](http://www.consultant.ru/document/cons_doc_LAW_198429/c956ff01bf42465d7052431dec215b77d0404875/), МВД: [consultant.ru](http://www.consultant.ru/document/cons_doc_LAW_89677/bb6520d96c564e6c780f0b58f00742041e1c44b5/), стандарт: [icao.int](https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf)
+ℹ️ [МИД](http://www.consultant.ru/document/cons_doc_LAW_360580/9eb761ae644ec1e283b3a50ef232330b924577cb/) • [МВД](http://www.consultant.ru/document/cons_doc_LAW_89677/db3d94f8d21c0b290f4ed59633c74a4fa1f4767f/) • [ICAO](https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf)

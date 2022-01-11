@@ -36,7 +36,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.TELEGRAM)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/telegram.json)
 
 ```
 cyr  lat

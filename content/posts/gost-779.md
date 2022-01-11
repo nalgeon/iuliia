@@ -37,7 +37,7 @@ result = iuliia.translate(source, schema=iuliia.GOST_779)
 result_alt = iuliia.translate(source, schema=iuliia.GOST_779_ALT)</code></pre>
 </div>
 
-## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/gost_779.json)
+## Правила / [lat1](https://github.com/nalgeon/iuliia/blob/master/gost_779.json) • [lat2](https://github.com/nalgeon/iuliia/blob/master/gost_779_alt.json)
 
 ```
 cyr  lat1 lat2

@@ -39,7 +39,7 @@ result = iuliia.translate(source, schema=iuliia.BGN_PCGN)
 result_alt = iuliia.translate(source, schema=iuliia.BGN_PCGN_ALT)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/bgn_pcgn.json)
 
 ```
 cyr  lat
