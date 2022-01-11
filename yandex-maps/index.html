@@ -71,14 +71,14 @@ var result = iuliia.translate(source, iuliia.YANDEX_MAPS);</code></pre>
 source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
 result = iuliia.translate(source, schema=iuliia.YANDEX_MAPS)</code></pre>
 </div>
-<h2 id=правила>Правила</h2>
+<h2 id=правила--jsonhttpsgithubcomnalgeoniuliiablobmasteryandex_mapsjson>Правила / <a href=https://github.com/nalgeon/iuliia/blob/master/yandex_maps.json>json</a></h2>
 <pre tabindex=0><code>cyr  lat
 а    a
 б    b
 в    v
 г    g
 д    d
-е    e
+е    ye,e
 ё    yo
 ж    zh
 з    z
@@ -106,7 +106,13 @@ result = iuliia.translate(source, schema=iuliia.YANDEX_MAPS)</code></pre>
 э    e
 ю    yu
 я    ya
-</code></pre><p>Буква <code>Ъ</code> не пишется, кроме <code>ЪЕ</code> → <code>YE</code> (подъезд → podyezd)</p>
+</code></pre><p>Буква <code>Е</code> →</p>
+<ul>
+<li><code>YE</code> в начале слова (Елабуга → Yelabuga);</li>
+<li><code>YE</code> после гласных (Бабаево → Babayevo);</li>
+<li><code>E</code> во всех остальных случаях (Белово → Belovo).</li>
+</ul>
+<p>Буква <code>Ъ</code> не пишется, кроме <code>ЪЕ</code> → <code>YE</code> (подъезд → podyezd)</p>
 <p>Буквы <code>Ы</code> → <code>Y</code>, кроме окончаний на <code>-ЫЙ</code> (Сыктывкар → Syktyvkar)</p>
 <p>Окончание <code>ЫЙ</code> → <code>IY</code> (Красный → Krasniy)</p>
 <p>ℹ️ <a href=https://yandex.ru/support/nmaps/app_transliteration.html>yandex.ru</a></p>

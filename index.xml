@@ -26,7 +26,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.ALA_LC)
 result_alt = iuliia.translate(source, schema=iuliia.ALA_LC_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmasterala_lcjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/ala_lc.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat1 lat2
 а    a    a
 б    b    b
@@ -62,7 +62,7 @@ result_alt = iuliia.translate(source, schema=iuliia.ALA_LC_ALT)</code></pre>
 ю    i͡u   iu
 я    i͡a   ia
 </code></pre><p>Особых правил нет.</p>
-<p>ℹ️ <a href="https://www.loc.gov/catdir/cpso/romanization/russian.pdf">loc.gov</a>, <a href="https://en.wikipedia.org/wiki/ALA-LC_romanization_for_Russian">wikipedia.org</a></p>
+<p>ℹ️ <a href="https://www.loc.gov/catdir/cpso/romanization/russian.pdf">loc.gov</a> • <a href="https://en.wikipedia.org/wiki/ALA-LC_romanization_for_Russian">wikipedia.org</a></p>
 ]]></content:encoded></item><item><title>BGN/PCGN</title><link>https://iuliia.ru/bgn-pcgn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/bgn-pcgn/</guid><description>Схема транслитерации BGN/PCGN</description><content:encoded><![CDATA[<p>Древняя схема транслитерации ООН для географических названий. Почти без диакритики, но зачем-то оставила <code>Ё</code> с точками.</p>
 <p>📅 1944 / 1947 • ✔️ действует • ㊙️ с диакритикой</p>
 <p>Особенности:</p>
@@ -92,7 +92,7 @@ source = "Россия, город Йошкар-Ола, улица Яна Кра
 result = iuliia.translate(source, schema=iuliia.BGN_PCGN)
 result_alt = iuliia.translate(source, schema=iuliia.BGN_PCGN_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmasterbgn_pcgnjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/bgn_pcgn.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat
 а    a
 б    b
@@ -188,7 +188,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.BS_2979)
 result_alt = iuliia.translate(source, schema=iuliia.BS_2979_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--lat1httpsgithubcomnalgeoniuliiablobmasterbs_2979json--lat2httpsgithubcomnalgeoniuliiablobmasterbs_2979_altjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/bs_2979.json">lat1</a> • <a href="https://github.com/nalgeon/iuliia/blob/master/bs_2979_alt.json">lat2</a></h2>
 <pre tabindex="0"><code>cyr  lat1 lat2
 а    a    a
 б    b    b
@@ -286,8 +286,9 @@ result = iuliia.translate(source, schema=iuliia.ICAO_DOC_9303)</code></pre>
 ю    iu
 я    ia
 </code></pre><p>Особых правил нет.</p>
-<p>ℹ️ МИД: <a href="http://www.consultant.ru/document/cons_doc_LAW_198429/c956ff01bf42465d7052431dec215b77d0404875/">consultant.ru</a>, МВД: <a href="http://www.consultant.ru/document/cons_doc_LAW_89677/bb6520d96c564e6c780f0b58f00742041e1c44b5/">consultant.ru</a>, стандарт: <a href="https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf">icao.int</a></p>
-]]></content:encoded></item><item><title>ISO/R 9:1954</title><link>https://iuliia.ru/iso-9-1954/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1954/</guid><description>Схема транслитерации ISO/R 9:1954</description><content:encoded><![CDATA[<p>Международный стандарт 1954 года. Плоха примерно всем. Заменена на <a href="/iso-9-1968">ISO/R 9:1968</a>, затем на <a href="/gost-779">ISO 9:1995</a>.</p>
+<p>ℹ️ <a href="http://www.consultant.ru/document/cons_doc_LAW_360580/9eb761ae644ec1e283b3a50ef232330b924577cb/">МИД</a> • <a href="http://www.consultant.ru/document/cons_doc_LAW_89677/db3d94f8d21c0b290f4ed59633c74a4fa1f4767f/">МВД</a> • <a href="https://www.icao.int/publications/Documents/9303_p3_cons_en.pdf">ICAO</a></p>
+]]></content:encoded></item><item><title>ISO/R 9:1954</title><link>https://iuliia.ru/iso-9-1954/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1954/</guid><description>Схема транслитерации ISO/R 9:1954</description><content:encoded><![CDATA[<p>Международный стандарт 1954 года. Плоха примерно всем.</p>
+<p>Заменена на <a href="/iso-9-1968">ISO/R 9:1968</a>, затем на <a href="/gost-779">ISO 9:1995</a>.</p>
 <p>📅 1954 • 💀 не действует • ㊙️ с диакритикой</p>
 <p>Особенности:</p>
 <ul>
@@ -311,7 +312,7 @@ var result = iuliia.translate(source, iuliia.ISO_9_1954);</code></pre>
 source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
 result = iuliia.translate(source, schema=iuliia.ISO_9_1954)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmasteriso_9_1954json">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/iso_9_1954.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat
 а    a
 б    b
@@ -348,7 +349,8 @@ result = iuliia.translate(source, schema=iuliia.ISO_9_1954)</code></pre>
 я    ja
 </code></pre><p>Особых правил нет.</p>
 <p>ℹ️ <a href="https://en.wikipedia.org/wiki/ISO_9#ISO/R_9">wikipedia.org</a></p>
-]]></content:encoded></item><item><title>ISO/R 9:1968</title><link>https://iuliia.ru/iso-9-1968/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1968/</guid><description>Схема транслитерации ISO/R 9:1968</description><content:encoded><![CDATA[<p>Международный стандарт 1968 года. Пожалуй, самая плохая из всех схем. Заменена на <a href="/gost-779">ISO 9:1995</a>.</p>
+]]></content:encoded></item><item><title>ISO/R 9:1968</title><link>https://iuliia.ru/iso-9-1968/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/iso-9-1968/</guid><description>Схема транслитерации ISO/R 9:1968</description><content:encoded><![CDATA[<p>Международный стандарт 1968 года. Пожалуй, самая плохая из всех схем.</p>
+<p>Заменена на <a href="/gost-779">ISO 9:1995</a>.</p>
 <p>📅 1968 • 💀 не действует • ㊙️ с диакритикой</p>
 <p>Особенности:</p>
 <ul>
@@ -376,7 +378,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.ISO_9_1968)
 result_alt = iuliia.translate(source, schema=iuliia.ISO_9_1968_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--lathttpsgithubcomnalgeoniuliiablobmasteriso_9_1968json--althttpsgithubcomnalgeoniuliiablobmasteriso_9_1968_altjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/iso_9_1968.json">lat</a> • <a href="https://github.com/nalgeon/iuliia/blob/master/iso_9_1968_alt.json">alt</a></h2>
 <pre tabindex="0"><code>cyr  lat  alt
 а    a    a
 б    b    b
@@ -437,7 +439,7 @@ var result = iuliia.translate(source, iuliia.UNGEGN_1987);</code></pre>
 source = "Россия, город Йошкар-Ола, улица Яна Крастыня"
 result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmasterungegn_1987json">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/ungegn_1987.json">json</a></h2>
 <pre tabindex="0"><code>а    a
 б    b
 в    v
@@ -472,7 +474,7 @@ result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
 ю    ju
 я    ja
 </code></pre><p>Особых правил нет.</p>
-<p>ℹ️ <a href="https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf">un.org</a>, <a href="https://www.eki.ee/wgrs/rom1_ru.htm">eki.ee</a></p>
+<p>ℹ️ <a href="https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf">un.org</a> • <a href="https://www.eki.ee/wgrs/rom1_ru.htm">eki.ee</a></p>
 ]]></content:encoded></item><item><title>Википедия</title><link>https://iuliia.ru/wikipedia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/wikipedia/</guid><description>Схема транслитерации Википедии</description><content:encoded><![CDATA[<p>Схема транслитерации, которую использует Википедия. Самая продуманная, звучит лучше всех и выглядит приятнее большинства прочих схем. Пожалуй, неудачной вышла только буква <code>Щ</code>.</p>
 <p>Сделана на основе <a href="/bgn-pcdn">BGN/PCGN</a> со значительными модификациями.</p>
 <p>📅 2005 • ✔️ действует • ⚪ без диакритики</p>
@@ -563,8 +565,9 @@ result = iuliia.translate(source, schema=iuliia.WIKIPEDIA)</code></pre>
 <li><code>-ЫЕ</code> → <code>YE</code> (Набережные Челны → Naberezhnye Chelny)</li>
 </ul>
 <p>ℹ️ <a href="https://en.wikipedia.org/wiki/Wikipedia:Romanization_of_Russian">wikipedia.org</a></p>
-]]></content:encoded></item><item><title>ГОСТ 16876-71</title><link>https://iuliia.ru/gost-16876/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-16876/</guid><description>Схема транслитерации ГОСТ 16876-71</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, стандарт 1971 года. Также известна как СТ СЭВ 1362-78, а в англоязычной литературе — GOST 1983. Старая и страшная. Заменена на <a href="/gost-779">ГОСТ 7.79-2000</a></p>
-<p>📅 1971 / 1978 / 1983 • 💀 не действует • ㊙️ ⚪ с диакритикой и без</p>
+]]></content:encoded></item><item><title>ГОСТ 16876-71</title><link>https://iuliia.ru/gost-16876/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-16876/</guid><description>Схема транслитерации ГОСТ 16876-71</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, стандарт 1971 года. Также известна как СТ СЭВ 1362-78, а в англоязычной литературе — GOST 1983. Старая и страшная.</p>
+<p>Выросла из <a href="/scientific">научной</a> схемы. Заменена на <a href="/gost-779">ГОСТ 7.79-2000</a>.</p>
+<p>📅 1971 • 💀 не действует • ㊙️ ⚪ с диакритикой и без</p>
 <p>Особенности:</p>
 <ul>
 <li>Диакритика для букв <code>Ё</code>, <code>Ж</code>, <code>Ц</code>, <code>Ч</code>, <code>Ш</code>, <code>Щ</code>, <code>Э</code></li>
@@ -591,7 +594,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.GOST_16876)
 result_alt = iuliia.translate(source, schema=iuliia.GOST_16876_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--lat1httpsgithubcomnalgeoniuliiablobmastergost_16876json--lat2httpsgithubcomnalgeoniuliiablobmastergost_16876_altjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/gost_16876.json">lat1</a> • <a href="https://github.com/nalgeon/iuliia/blob/master/gost_16876_alt.json">lat2</a></h2>
 <pre tabindex="0"><code>cyr  lat1       lat2
 а    a          a
 б    b          b
@@ -655,7 +658,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.GOST_779)
 result_alt = iuliia.translate(source, schema=iuliia.GOST_779_ALT)</code></pre>
 </div>
-<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmastergost_779json">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/gost_779.json">json</a></h2>
+<h2 id="правила--lat1httpsgithubcomnalgeoniuliiablobmastergost_779json--lat2httpsgithubcomnalgeoniuliiablobmastergost_779_altjson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/gost_779.json">lat1</a> • <a href="https://github.com/nalgeon/iuliia/blob/master/gost_779_alt.json">lat2</a></h2>
 <pre tabindex="0"><code>cyr  lat1 lat2
 а    a    a
 б    b    b
