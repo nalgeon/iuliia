@@ -250,7 +250,7 @@ var result = iuliia.translate(source, iuliia.ICAO_DOC_9303);</code></pre>
 source = "Юлия Щеглова"
 result = iuliia.translate(source, schema=iuliia.ICAO_DOC_9303)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmastericao_doc_9303json">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/icao_doc_9303.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat
 а    a
 б    b
@@ -473,7 +473,8 @@ result = iuliia.translate(source, schema=iuliia.UNGEGN_1987)</code></pre>
 я    ja
 </code></pre><p>Особых правил нет.</p>
 <p>ℹ️ <a href="https://unstats.un.org/unsd/geoinfo/UNGEGN/docs/23-gegn/crp/23rd_ungegn_CRP6.pdf">un.org</a>, <a href="https://www.eki.ee/wgrs/rom1_ru.htm">eki.ee</a></p>
-]]></content:encoded></item><item><title>Википедия</title><link>https://iuliia.ru/wikipedia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/wikipedia/</guid><description>Схема транслитерации Википедии</description><content:encoded><![CDATA[<p>Схема транслитерации, которую использует Википедия. Сделана на основе <a href="/bgn-pcdn">BGN/PCGN</a>со значительными модификациями. Самая продуманная, звучит лучше всех и выглядит приятнее большинства прочих схем. Пожалуй, неудачной вышла только буква <code>Щ</code>.</p>
+]]></content:encoded></item><item><title>Википедия</title><link>https://iuliia.ru/wikipedia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/wikipedia/</guid><description>Схема транслитерации Википедии</description><content:encoded><![CDATA[<p>Схема транслитерации, которую использует Википедия. Самая продуманная, звучит лучше всех и выглядит приятнее большинства прочих схем. Пожалуй, неудачной вышла только буква <code>Щ</code>.</p>
+<p>Сделана на основе <a href="/bgn-pcdn">BGN/PCGN</a> со значительными модификациями.</p>
 <p>📅 2005 • ✔️ действует • ⚪ без диакритики</p>
 <p>Особенности:</p>
 <ul>
@@ -498,7 +499,7 @@ var result = iuliia.translate(source, iuliia.WIKIPEDIA);</code></pre>
 source = "Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю"
 result = iuliia.translate(source, schema=iuliia.WIKIPEDIA)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmasterwikipediajson">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/wikipedia.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat
 а    a
 б    b
@@ -627,8 +628,8 @@ result_alt = iuliia.translate(source, schema=iuliia.GOST_16876_ALT)</code></pre>
 я    â (ja)     ja
 </code></pre><p>Особых правил нет.</p>
 <p>ℹ️ <a href="https://nevacert.ru/files/gost/gost_16876-1971.pdf">nevacert.ru</a></p>
-]]></content:encoded></item><item><title>ГОСТ 7.79-2000</title><link>https://iuliia.ru/gost-779/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-779/</guid><description>Схема транслитерации ГОСТ 7.79-2000</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, международный стандарт <code>ISO 9:1995</code>. Громоздкая, зато обратимая. Есть вариант с диакритикой.</p>
-<p>📅 1995 en / 2000 ru • ✔️ действует • ㊙️ ⚪ с диакритикой и без</p>
+]]></content:encoded></item><item><title>ГОСТ 7.79-2000</title><link>https://iuliia.ru/gost-779/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://iuliia.ru/gost-779/</guid><description>Схема транслитерации ГОСТ 7.79-2000</description><content:encoded><![CDATA[<p>Универсальная схема транслитерации, международный стандарт ISO 9:1995. Громоздкая, зато обратимая. Есть вариант с диакритикой.</p>
+<p>📅 1995 • ✔️ действует • ㊙️ ⚪ с диакритикой и без</p>
 <p>Особенности:</p>
 <ul>
 <li>В варианте с диакритикой есть альтернативы для <code>Х</code>, <code>Щ</code>, <code>Ю</code>, <code>Я</code></li>
@@ -654,7 +655,7 @@ source = "Юлия, съешь ещё этих мягких французски
 result = iuliia.translate(source, schema=iuliia.GOST_779)
 result_alt = iuliia.translate(source, schema=iuliia.GOST_779_ALT)</code></pre>
 </div>
-<h2 id="правила">Правила</h2>
+<h2 id="правила--jsonhttpsgithubcomnalgeoniuliiablobmastergost_779json">Правила / <a href="https://github.com/nalgeon/iuliia/blob/master/gost_779.json">json</a></h2>
 <pre tabindex="0"><code>cyr  lat1 lat2
 а    a    a
 б    b    b
