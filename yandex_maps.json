@@ -37,7 +37,16 @@
         "ю": "yu",
         "я": "ya"
     },
-    "prev_mapping": null,
+    "prev_mapping": {
+        "е": "ye",
+        "ае": "ye",
+        "ие": "ye",
+        "ое": "ye",
+        "уе": "ye",
+        "эе": "ye",
+        "юе": "ye",
+        "яе": "ye"
+    },
     "next_mapping": { "ъе": "y" },
     "ending_mapping": { "ый": "iy" },
     "samples": [
@@ -53,6 +62,9 @@
         ["Москва, ул Подъёмная", "Moskva, ul Podyomnaya"],
         ["Астрахань, ул Подъяпольского", "Astrakhan, ul Podyapolskogo"],
         ["Щегловитовка", "Scheglovitovka"],
-        ["Новый Уренгой", "Noviy Urengoy"]
+        ["Новый Уренгой", "Noviy Urengoy"],
+        ["Елабуга", "Yelabuga"],
+        ["Бабаево", "Babayevo"],
+        ["Белово", "Belovo"]
     ]
 }
