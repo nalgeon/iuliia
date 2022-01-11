@@ -34,7 +34,7 @@ source = "Юлия Щеглова"
 result = iuliia.translate(source, schema=iuliia.ICAO_DOC_9303)</code></pre>
 </div>
 
-## Правила
+## Правила / [json](https://github.com/nalgeon/iuliia/blob/master/icao_doc_9303.json)
 
 ```
 cyr  lat
