@@ -5,6 +5,7 @@
     "type": "object",
     "required": ["name", "description", "url", "mapping", "samples"],
     "additionalProperties": false,
+    "description": "Transliteration Schema",
     "properties": {
         "name": {
             "description": "Schema name",
