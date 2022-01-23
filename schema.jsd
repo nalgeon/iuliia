@@ -4,6 +4,7 @@
     "title": "Transliteration Schema",
     "type": "object",
     "required": ["name", "description", "url", "mapping", "samples"],
+    "additionalProperties": false,
     "properties": {
         "name": {
             "description": "Schema name",
@@ -34,19 +35,23 @@
         },
         "mapping": {
             "description": "Mapping for individual letters",
-            "type": "object"
+            "type": "object",
+            "additionalProperties": { "type": "string" }
         },
         "prev_mapping": {
             "description": "Mapping for letters with respect to previous sibling",
-            "type": ["object", "null"]
+            "type": ["object", "null"],
+            "additionalProperties": { "type": "string" }
         },
         "next_mapping": {
             "description": "Mapping for letters with respect to next sibling",
-            "type": ["object", "null"]
+            "type": ["object", "null"],
+            "additionalProperties": { "type": "string" }
         },
         "ending_mapping": {
             "description": "Mapping for word endings",
-            "type": ["object", "null"]
+            "type": ["object", "null"],
+            "additionalProperties": { "type": "string" }
         },
         "samples": {
             "description": "Transliteraton samples",
