@@ -49,6 +49,7 @@ For schema details and other information, see [iuliia.ru](https://iuliia.ru/) (i
 -   [Go](https://github.com/mehanizm/iuliia-go)
 -   [Java](https://github.com/massita99/iuliia-java) (Gson)
 -   [Java](https://github.com/homyakin/iuliia-java) (Jackson)
+-   [Java](https://github.com/radist-nt/iuliia-java) (Jackson)
 -   [JavaScript](https://github.com/nalgeon/iuliia-js)
 -   [PHP](https://github.com/perevoshchikov/iuliia-php)
 -   [PostgreSQL](https://github.com/rin-nas/postgresql-patterns-library/blob/master/functions/iuliia_translate.sql)
