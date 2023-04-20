@@ -10,7 +10,7 @@ Why use `Iuliia`:
 
 -   20 transliteration schemas (rule sets), including all main international and Russian standards.
 -   Correctly implements not only the base mapping, but all the special rules for letter combinations and word endings (AFAIK, Iuliia is the only library which does so).
--   Simple API and zero third-party dependencies.
+-   Simple API and zero third-party dependencies, except of com.fasterxml.jackson :o(.
 
 ## Supported schemas
 
