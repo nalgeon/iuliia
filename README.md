@@ -8,13 +8,14 @@ Transliteration means representing Cyrillic data (mainly names and geographic lo
 
 Why use `Iuliia`:
 
--   20 transliteration schemas (rule sets), including all main international and Russian standards.
--   Correctly implements not only the base mapping, but all the special rules for letter combinations and word endings (AFAIK, Iuliia is the only library which does so).
+-   20 Russian transliteration schemas, including all major international and national standards.
+-   Official Uzbek transliteration schema.
+-   Implements the base mapping and all special rules for letter combinations and word endings (AFAIK, Iuliia is the only library that does this.)
 -   Simple API and zero third-party dependencies.
 
 ## Supported schemas
 
-Actual schemas:
+Russian (actual):
 
 -   ALA-LC: [ala_lc.json](ala_lc.json) and [ala_lc_alt.json](ala_lc_alt.json)
 -   BGN/PCGN: [bgn_pcgn.json](bgn_pcgn.json) and [bgn_pcgn_alt.json](bgn_pcgn_alt.json)
@@ -29,9 +30,8 @@ Actual schemas:
 -   Telegram: [telegram.json](telegram.json)
 -   Wikipedia: [wikipedia.json](wikipedia.json)
 -   Yandex.Maps: [yandex_maps.json](yandex_maps.json)
--   Yandex.Money: [yandex_money.json](yandex_money.json)
 
-And deprecated ones:
+Russian (deprecated):
 
 -   GOST 16876-71: [gost_16876.json](gost_16876.json) and [gost_16876_alt.json](gost_16876_alt.json)
 -   GOST R 52535.1-2006: [gost_52535.json](gost_52535.json)
@@ -39,6 +39,9 @@ And deprecated ones:
 -   ISO/R 9:1968: [iso_9_1968.json](iso_9_1968.json) and [iso_9_1968_alt.json](iso_9_1968_alt.json)
 -   MVD 310-1997: [mvd_310.json](mvd_310.json) and [mvd_310_fr.json](mvd_310_fr.json)
 -   MVD 782-2000: [mvd_782.json](mvd_782.json)
+-   Yandex.Money: [yandex_money.json](yandex_money.json)
+
+Uzbek: [uz.json](uz.json)
 
 For schema details and other information, see [iuliia.ru](https://iuliia.ru/) (in Russian).
 
@@ -54,7 +57,7 @@ For schema details and other information, see [iuliia.ru](https://iuliia.ru/) (i
 -   [Kotlin](https://github.com/yorlov/iuliia)
 -   [PHP](https://github.com/perevoshchikov/iuliia-php)
 -   [PostgreSQL](https://github.com/rin-nas/postgresql-patterns-library/blob/master/functions/iuliia_translate.sql)
--   **[Python](https://github.com/nalgeon/iuliia-py) ✨**
+-   [Python](https://github.com/nalgeon/iuliia-py)
 -   [Ruby](https://github.com/adnikiforov/iuliia-rb)
 -   [Rust](https://github.com/massita99/iuliia-rust)
 -   [Swift](https://github.com/petertretyakov/Iuliia)
@@ -65,7 +68,7 @@ This repo contains schema descriptions. It is not intended to be used directly. 
 
 In general:
 
--   Only Russian subset of Cyrillic is supported.
+-   Supports only the Russian and Uzbek Cyrillic subsets.
 -   Does not support composite Unicode characters (e.g., `Ё`, but not `Ё`).
 
 Schema-specific:
